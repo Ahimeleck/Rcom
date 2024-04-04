@@ -1,0 +1,24 @@
+.Fichas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: calc(50% - 20px); 
+    margin-left: calc(16% + 10px); 
+    margin-bottom: 20px; 
+}
+
+.Ficha {
+    text-align: left;
+    background-color: #2B2B2B; 
+    border-radius: 10px; 
+    color: #FFFFFF; 
+}
+
+/* Estilos de fichas individuales */
+.box-one, .box-two, .box-three, .box-four {
+    border-left: 10px solid #F25C05;
+}
+.box-four {
+    background-color: #F25C05; 
+    border-left: 10px solid #2B2B2B; 
+}
