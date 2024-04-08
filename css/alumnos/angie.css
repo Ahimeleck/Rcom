@@ -1,0 +1,50 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+.podio-item{
+    display: flex;
+    background-color: #F25C05;
+    align-items: center;
+    margin: 25px;
+    width: 65%;
+    border-radius: 40px;
+    justify-content: space-between;
+}
+.content { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2A2A2A;
+    color: white;
+    width: 92%;
+    border-radius: 40px;
+    font-weight:lighter;
+}
+
+.contenedor-texto{
+    width: 80%;
+}
+
+.podio-votos{
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 2rem;
+    color: white;
+    font-weight:550;
+}
+
+.podio-titulo{
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-right: 10%;
+    margin-left: 5% ;
+    
+}
+.podio-nombres{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #F25C05;
+    margin-right: 10%;
+    margin-left: 5% ;
+}
