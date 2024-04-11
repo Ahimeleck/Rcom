@@ -1,29 +1,33 @@
 expos{
+    box-sizing: content-box;
+    margin: auto;
+    padding:auto;
     background-color:f2f2f2;
     border-radius: 30px;
-  }
-  .enlaces {
-    display: flex;
-    justify-content:space-around;
-  
-  }
-  h2{
-    color:2B2B2B;
-    font-size:32px;
-    display: flex;
-    justify-content:flex-start;
-  }
-  .enlace1{
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
     
-  }
-  .enlace2{
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-      
-  }
+    .enlaces {
+        display: flex;
+        justify-content:space-around;
+    
+    }
+    h2{
+        color:2B2B2B;
+        font-size:32px;
+        display: flex;
+        justify-content:flex-start;
+    }
+    .enlace1{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+    }
+    .enlace2{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+    }
+}
