@@ -163,7 +163,4 @@ main {
     .Fichas {
         grid-template-columns: repeat(2, 1fr)!important;
     }
-    #estadisticas *{
-        width: 100%;
-    }
 }
