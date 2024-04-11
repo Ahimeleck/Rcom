@@ -1,16 +1,4 @@
-body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size:16px;
-    text-decoration: none;
-    .material-symbols-outlined {
-      font-size: 50px;
-      font-weight: 1000;
-      border-radius: 10px
-  }
-  }
-  .FichasContainer {
+.FichasContainer {
       background-color: #F2F2F2; 
       border-radius: 15px; 
       padding: 20px;
@@ -18,9 +6,10 @@ body {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 10px;
-      width: calc(25% - 10px);; 
+      width: calc(25% - 10px);
       margin-bottom: 20px; 
   }
+}
   
   .Ficha {
       text-align: left;
@@ -38,5 +27,3 @@ body {
       background-color: #F25C05; 
       border-left: 10px solid #2B2B2B; 
   }
-  
-}

@@ -1,0 +1,87 @@
+/*CSS Grafica Dona*/
+
+/*Donas Grandes*/
+.larger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .big {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #F25C05;
+    margin-bottom: 50px;
+  }
+  
+  .big-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .big-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .big-title {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 310px;
+    font-weight: bold;
+    width: 375px;
+  }
+
+  /*Donas Pequeñas*/
+  .chart-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .chart {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #F25C05;
+  }
+  
+  .chart-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .chart-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .chart-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 160px;
+    font-weight: bold;
+  }
