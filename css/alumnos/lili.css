@@ -18,8 +18,6 @@
       color: #FFFFFF;
       padding: 20px;
   }
-  
-  /* Estilos de fichas individuales */
   .box-one, .box-two, .box-three, .box-four {
       border-left: 10px solid #F25C05;
   }
