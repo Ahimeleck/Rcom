@@ -1,5 +1,6 @@
 expo{
     background-color:f2f2f2;
+    border-radius: 30px;
   }
   .enlaces {
     display: flex;
