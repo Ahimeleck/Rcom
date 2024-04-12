@@ -1,5 +1,10 @@
 /*CSS Grafica Dona*/
-
+#estadisticas {
+  padding: 30px;
+  margin: 5px;
+  background-color: #F5F5F5;
+  border-radius: 35px;
+}
 /*Donas Grandes*/
 .larger {
     display: flex;
@@ -25,7 +30,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #F5F5F5;
   }
   
   .big-percent {
@@ -53,6 +58,9 @@
   .chart-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 1.2em;
   }
   
   .chart {
@@ -71,7 +79,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #F5F5F5;
   }
   
   .chart-percent {
