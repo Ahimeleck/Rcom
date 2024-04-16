@@ -1,10 +1,9 @@
-expos{
+#expos{
     box-sizing: content-box;
     margin: auto;
     padding:auto;
     background-color:f2f2f2;
     border-radius: 30px;
-    
     .enlaces {
         display: flex;
         justify-content:space-around;
