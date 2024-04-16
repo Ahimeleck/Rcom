@@ -28,7 +28,7 @@ a {
 }
 
 .sidebar nav, menu{
-  margin-top:70px
+  margin-top:30px
 }
 .sidebar a:hover {
   color: #c2c2c2;
@@ -40,4 +40,9 @@ a {
   font-size: 25px;
   margin-right: 15px;
   transform: scale(1.4);
+}
+.completo{
+  margin: 10px;
+  transform: scale(.7);
+  align-items: center;
 }
