@@ -1,5 +1,10 @@
 /*CSS Grafica Dona*/
-
+#estadisticas {
+  padding: 30px;
+  margin: 15px;
+  background-color: #F5F5F5;
+  border-radius: 35px;
+}
 /*Donas Grandes*/
 .larger {
     display: flex;
@@ -10,11 +15,11 @@
   
   .big {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #F25C05;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   
   .big-inner {
@@ -22,14 +27,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #F5F5F5;
   }
   
   .big-percent {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -38,23 +44,29 @@
   }
   
   .big-title {
+    position: absolute;
     text-align: center;
-    font-size: 32px;
-    margin-top: 310px;
+    font-size: 28px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-weight: bold;
-    width: 375px;
+    margin-top: 100px;
   }
 
   /*Donas Pequeñas*/
   .chart-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 1.2em;
   }
   
   .chart {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-color: #F25C05;
   }
@@ -64,24 +76,29 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #F5F5F5;
   }
   
   .chart-percent {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
   }
   
   .chart-title {
+    position: absolute;
     text-align: center;
-    font-size: 24px;
-    margin-top: 160px;
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 55px;
     font-weight: bold;
   }

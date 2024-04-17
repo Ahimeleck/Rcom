@@ -79,13 +79,13 @@ h6{
 #cuerpo.colapsado > aside > .sidebar{ 
     width: 105px;
 }
-#cuerpo.expandido > aside > div > img.Completo, #cuerpo.colapsado > aside > div > img.Corto, #cuerpo.expandido #cerrarMenu > img.izquierda, #cuerpo.colapsado #cerrarMenu > img.derecha{
+#cuerpo.expandido > aside > div > img.Completo, #cuerpo.colapsado > aside > div > img.Corto,#cuerpo.expandido #cerrarMenu > span.icon-asset.material-symbols-outlined.izquierda, #cuerpo.colapsado #cerrarMenu > span.icon-asset.material-symbols-outlined.derecha, #cuerpo.expandido  > aside a span.texto{
     display: block;
 }
-#cuerpo.colapsado > aside > div > img.Completo, #cuerpo.expandido > aside > div > img.Corto, #cuerpo.colapsado #cerrarMenu > img.izquierda, #cuerpo.expandido #cerrarMenu > img.derecha{
+
+#cuerpo.colapsado > aside > div > img.Completo, #cuerpo.expandido > aside > div > img.Corto, #cuerpo.colapsado #cerrarMenu > span.icon-asset.material-symbols-outlined.izquierda, #cuerpo.expandido #cerrarMenu > span.icon-asset.material-symbols-outlined.derecha, #cuerpo.colapsado  > aside a span.texto{
     display: none;
 }
-
 aside {
     background: #2a2a2a;
     grid-row-start: 1;
@@ -119,6 +119,19 @@ main {
 .Fichas {
     grid-template-columns: repeat(1, 1fr)!important;
     width: calc(100% - 10px)!important;
+}
+
+.Corto, .Completo{
+    width: 80%;
+    margin-top: 2.3rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#cuerpo.expandido > aside > div > img.Completo, #cuerpo.expandido > aside a span.texto{
+    /*display: none;
+}
+#cuerpo.expandido > aside > div > img.Corto{
+    display:block;*/
 }
 
 @media screen and (min-width: 768px){
@@ -162,8 +175,5 @@ main {
     }
     .Fichas {
         grid-template-columns: repeat(2, 1fr)!important;
-    }
-    #estadisticas *{
-        width: 100%;
     }
 }
