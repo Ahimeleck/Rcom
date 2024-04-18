@@ -41,32 +41,32 @@ img {
 h1{
     font-weight: 700;
     font-size:2.5rem;
-    line-height: 1.2rem;
+    line-height: 1.2em;
 }
 h2{
     font-weight: 700;
     font-size:2.25rem;
-    line-height: 1.2rem;
+    line-height: 1.2em;
 }
 h3{
     font-weight: 700;
     font-size:2rem;
-    line-height: 1.2rem;
+    line-height: 1.2em;
 }
 h4{
     font-weight: 600;
     font-size:1.75rem;
-    line-height: 1.3rem;
+    line-height: 1.3em;
 }
 h5{
     font-weight: 600;
     font-size:1.5rem;
-    line-height: 1.3rem;
+    line-height: 1.3em;
 }
 h6{
     font-weight: 500;
     font-size:1.25rem;
-    line-height: 1.4rem;
+    line-height: 1.4em;
 }
 #cuerpo.colapsado > aside > .sidebar{ 
     width: 105px;
@@ -110,10 +110,6 @@ main {
     display: inline-block;
     vertical-align: top;
 }
-.Fichas {
-    grid-template-columns: repeat(1, 1fr)!important;
-    width: calc(100% - 10px)!important;
-}
 .Corto, .Completo{
     width: 80%;
     margin-top: 2.3rem;
@@ -143,15 +139,11 @@ main {
         grid-template-rows:1fr 1fr;
         grid-template-columns:100%;
     }
-    #crearExpo, #votaciones{
-        width: 47%;
-    }
+   
     #contenido {
         grid-template-rows:120px 1fr;
     }
-    .Fichas {
-        grid-template-columns: repeat(2, 1fr)!important;
-    }
+    
     #cuerpo.expandido > aside a span.texto, #cuerpo.expandido > aside > div > img.Completo, #cuerpo.colapsado > aside > div > img.Corto, #cuerpo.colapsado #cerrarMenu > span.icon-asset.material-symbols-outlined.derecha,#cuerpo.expandido #cerrarMenu > span.icon-asset.material-symbols-outlined.izquierda{
         display:block;
     }
@@ -173,9 +165,6 @@ main {
     main {
         grid-template-rows:1fr;
         grid-template-columns:50% 50%;
-    }
-    .Fichas {
-        grid-template-columns: repeat(2, 1fr)!important;
     }
     .sidebar a {
         flex-direction: row;
