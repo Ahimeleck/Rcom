@@ -21,10 +21,11 @@
     width: 92%;
     border-radius: 40px;
     font-weight:lighter;
+    margin-bottom: 25px;
 }
 
 .contenedor-texto{
-    width: 80%;
+    width: 100%;
 }
 
 .podio-votos{
@@ -47,3 +48,10 @@
     color: #F25C05;
     margin: 0 10% 1em 5% ;
 }
+
+.podium{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    margin: 25px 25px 25px 46px;
+}
+
