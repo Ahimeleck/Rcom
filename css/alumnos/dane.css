@@ -1,7 +1,7 @@
 #crearExpo {
     background-color: #2B2B2B;
     border-radius: 30px;
-    margin: 25px 15px 25px 15px;
+    margin: 12px 15px;
 }
 #crearExpo a{
     color: #fff;
@@ -26,7 +26,7 @@
     display: inline-block;
     width: 60%;
     vertical-align: middle;
-    margin-left: 28px;
+    margin-left: 25px;
 }
 
 #crearExpo > a > div > h3{
