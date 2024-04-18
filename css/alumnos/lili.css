@@ -1,13 +1,15 @@
 .FichasContainer {
       background-color: #F2F2F2; 
-      border-radius: 15px; 
+      border-radius: 35px; 
       padding: 20px;
-      margin: 15px;
+      margin: 15px auto;
+      width:90%;
+      box-sizing: border-box;
   .Fichas {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 10px;
-      width: calc(25% - 10px);
+      width: calc(100% - 10px);
       margin-bottom: 20px; 
   }
 }
@@ -19,7 +21,12 @@
       color: #FFFFFF;
       padding: 20px;
       text-decoration: none;
+      h4 {
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
   }
+
 
   #fichas > div > div > a.Ficha.box-four > span{
     font-size: 95px;
@@ -42,6 +49,12 @@
 /*ESTILOS DE LAPTOP*/
 @media screen and (min-width: 1024px){
     .Fichas {
-        grid-template-columns: repeat(1, 1fr)!important;
+        grid-template-columns: repeat(2, 1fr)!important;
+        h3 {
+            font-size: 18px;
+        }
+        h4 {
+            font-size: 14px;
+        }
     }
 }
