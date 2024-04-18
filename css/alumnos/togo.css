@@ -4,7 +4,7 @@
     margin: 25px 15px 25px 15px;
 }
 #votaciones a{
-   
+   color: #fff;
     text-decoration: none;
 }
 #votaciones .material-symbols-outlined{
@@ -43,6 +43,9 @@
     margin-bottom: 30px;
     margin-top: 15px;
 }
+.fila .material-symbols-outlined{
+    margin-top: 15px;
+}
 @media screen and (min-width: 768px){
     #votaciones > a > div {
         width: 65%;
@@ -51,5 +54,10 @@
 @media screen and (min-width: 1024px){
     #votaciones > a > div {
         width: 50%;
+    }
+}
+@media screen and (min-width: 1309px){
+    .fila .material-symbols-outlined{
+        margin-top: 0px;
     }
 }
