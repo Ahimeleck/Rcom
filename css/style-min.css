@@ -172,9 +172,6 @@ main {
         grid-template-rows:1fr;
         grid-template-columns:50% 50%;
     }
-    .Fichas {
-        grid-template-columns: repeat(2, 1fr)!important;
-    }
     .sidebar a {
         -webkit-flex-direction: row;
         flex-direction: row;
