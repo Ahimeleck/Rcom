@@ -46,6 +46,9 @@
 .fila .material-symbols-outlined{
     margin-top: 15px;
 }
+.fila {
+    display: flex;
+}
 @media screen and (min-width: 768px){
     #votaciones > a > div {
         width: 65%;
