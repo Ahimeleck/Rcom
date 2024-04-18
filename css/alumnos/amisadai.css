@@ -52,6 +52,9 @@
    #expos .enlaces {
        flex-direction: row;
    }
+   #expos{
+    width: 95% !important;
+   }
    /*terminan los estiloos de tablet*/
 }
 
