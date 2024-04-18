@@ -65,6 +65,12 @@
     #votaciones > a > div {
         width: 50%;
     }
+    .fila {
+        flex-direction: column;
+    }
+    .fila .material-symbols-outlined {
+        margin-top: 0;
+    }
 }
 @media screen and (min-width: 1309px){
     .fila .material-symbols-outlined{
