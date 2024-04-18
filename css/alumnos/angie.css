@@ -1,13 +1,14 @@
-img{
-    width: 100px;
-    height: 100px;
+.podio-item img{
+    width: 45px;
+    border-radius: 50%;
+    border: 3px solid #F25C05;
 }
 .podio-item{
     display: flex;
     background-color: #F25C05;
     align-items: center;
     margin: 25px;
-    width: 65%;
+    width: 90%;
     border-radius: 40px;
     justify-content: space-between;
 }
@@ -35,16 +36,14 @@ img{
 }
 
 .podio-titulo{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 550;
-    margin-right: 10%;
-    margin-left: 5% ;
+    margin: 1em 10% 8px 5%;
     
 }
 .podio-nombres{
-    font-size: 1.2rem;
+    font-size: 0.87rem;
     font-weight: normal;
     color: #F25C05;
-    margin-right: 10%;
-    margin-left: 5% ;
+    margin: 0 10% 1em 5% ;
 }
