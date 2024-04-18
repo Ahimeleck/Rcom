@@ -35,11 +35,13 @@
 
 /*ESTILOS DE TABLET*/
 @media screen and (min-width: 768px){
-
+    .Fichas {
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
 }
 /*ESTILOS DE LAPTOP*/
 @media screen and (min-width: 1024px){
     .Fichas {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr)!important;
     }
 }
