@@ -143,9 +143,7 @@ main {
         grid-template-rows:1fr 1fr;
         grid-template-columns:100%;
     }
-    #crearExpo, #votaciones{
-        width: 47%;
-    }
+   
     #contenido {
         grid-template-rows:120px 1fr;
     }
