@@ -1,7 +1,7 @@
 #votaciones {
     background-color: #f5f5f5;
     border-radius: 30px;
-    margin: 25px 15px 25px 15px;
+    margin: 12px 15px;
 }
 #votaciones a{
    color: #fff;
@@ -26,7 +26,7 @@
     display: inline-block;
     width: 60%;
     vertical-align: middle;
-    margin-left: 28px;
+    margin-left: 25px;
     color: #2b2b2b;
 }
 
@@ -48,10 +48,16 @@
 }
 .fila {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
 }
 @media screen and (min-width: 768px){
     #votaciones > a > div {
         width: 65%;
+    }
+    .fila {
+        flex-direction: row;
     }
 }
 @media screen and (min-width: 1024px){
