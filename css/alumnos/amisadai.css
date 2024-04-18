@@ -1,13 +1,16 @@
 #expos{
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 30px;
-    margin: 15px;
+    margin: 15px auto;
     background-color: #F5F5F5;
     border-radius: 35px;
+    width: 90% !important;
     .enlaces {
         display: flex;
-        justify-content:space-around;
+        justify-content: space-around;
+        flex-direction: column;
         column-gap: 1rem;
+        flex-wrap: nowrap;
     }
     a {
         color:#2B2B2B;
@@ -46,12 +49,15 @@
 
 @media screen and (min-width: 768px){
    /*estilos de tablet*/
-
+   #expos .enlaces {
+       flex-direction: row;
+   }
    /*terminan los estiloos de tablet*/
 }
 
 @media screen and (min-width: 1024px){
    /*estilos de laptop*/
 
+   
    /*terminan los estiloos de laptop*/
 }
