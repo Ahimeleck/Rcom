@@ -43,14 +43,12 @@
     margin-bottom: 30px;
     margin-top: 15px;
 }
-.fila .material-symbols-outlined{
-    margin-top: 15px;
-}
+
 .fila {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 90%;
+    width: 100%;
 }
 @media screen and (min-width: 768px){
     #votaciones > a > div {
@@ -58,6 +56,9 @@
     }
     .fila {
         flex-direction: row;
+    }
+    .fila .material-symbols-outlined{
+        margin-top: 15px;
     }
 }
 @media screen and (min-width: 1024px){
