@@ -14,22 +14,23 @@
 .content { 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #2A2A2A;
     color: white;
-    width: 92%;
     border-radius: 40px;
-    font-weight:lighter;
-   
+    font-weight: lighter;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .contenedor-texto{
-    width: 80%;
+    width: 95%;
 }
 
 .podio-votos{
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     font-size: 2rem;
     color: white;
     font-weight:550;
@@ -38,14 +39,14 @@
 .podio-titulo{
     font-size: 1rem;
     font-weight: 550;
-    margin: 1em 10% 8px 5%;
+    margin: 1em 10% 8px 0%;
     
 }
 .podio-nombres{
     font-size: 0.87rem;
     font-weight: normal;
     color: #F25C05;
-    margin: 0 10% 1em 5% ;
+    margin: 0 10% 1em 0% ;
 }
 
 .podium{
@@ -57,3 +58,17 @@
     box-sizing: border-box;
 }
 
+/* estilos de tablet*/
+@media screen and (min-width: 768px){
+    .content {
+        flex-wrap: nowrap;
+    }
+    .podio-nombres, .podio-titulo {
+        margin-left:  5%;
+    }
+
+}
+/* estilos de laptop*/
+@media screen and (min-width: 1024px){
+
+}
