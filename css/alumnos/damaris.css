@@ -12,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  
+    
   .big {
     position: relative;
     width: 150px;
@@ -57,10 +57,13 @@
   /*Donas Pequeñas*/
   .chart-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 50px;
     margin-left: 1.2em;
+    gap: 40px 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   
   .chart {
@@ -102,3 +105,28 @@
     margin-top: 55px;
     font-weight: bold;
   }
+
+  /*Estilos de tablet*/
+  @media screen and (min-width: 768px){
+    .larger {
+      justify-content: space-around;
+      flex-direction: row;
+      }
+}
+
+
+/*Estilos de laptop*/
+@media screen and (min-width: 1024px){
+  .chart-container {
+    justify-content: space-evenly;
+    gap: 40px 70px;
+}
+}
+
+@media screen and (min-width: 1199px){
+  .chart-container {
+    gap: 45px 135px;
+  }
+}
+
+  
