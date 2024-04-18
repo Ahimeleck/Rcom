@@ -3,5 +3,17 @@
     font-weight: bold; 
     font-size: 1.5rem;
     line-height: 1.5em;
-    margin-left: 10%;
+    margin: 0px;
+}
+
+/* estilos de tablet*/
+@media screen and (min-width: 768px){
+    .podio-posicion {
+        text-align: center;
+    }
+
+}
+/* estilos de laptop*/
+@media screen and (min-width: 1024px){
+
 }
