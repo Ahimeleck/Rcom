@@ -1,6 +1,9 @@
 .sidebar {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
   align-items: center;
   background-color: #2a2a2a;
   font-family: "Poppins";
@@ -21,11 +24,15 @@
     }
     a {
         color: #fff!important;
+        display: -webkit-flex;
         display: flex;
+        -webkit-align-items: center;
         align-items: center;
         text-decoration: none!important;
         border-radius: 5px;
+        -webkit-flex-direction: column;
         flex-direction: column;
+        -webkit-flex-wrap: nowrap;
         flex-wrap: nowrap;
         :hover {
             color: #c2c2c2;
@@ -40,6 +47,7 @@
     .icon-asset {
         font-size: 25px;
         margin-right:2px;
+        -webkit-transform: scale(1.4);
         transform: scale(1.4);
     }
     .texto{
