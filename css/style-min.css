@@ -147,9 +147,7 @@ main {
     #contenido {
         grid-template-rows:120px 1fr;
     }
-    .Fichas {
-        grid-template-columns: repeat(2, 1fr)!important;
-    }
+    
     #cuerpo.expandido > aside a span.texto, #cuerpo.expandido > aside > div > img.Completo, #cuerpo.colapsado > aside > div > img.Corto, #cuerpo.colapsado #cerrarMenu > span.icon-asset.material-symbols-outlined.derecha,#cuerpo.expandido #cerrarMenu > span.icon-asset.material-symbols-outlined.izquierda{
         display:block;
     }
