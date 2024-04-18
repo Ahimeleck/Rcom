@@ -85,6 +85,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/css\/alumnos\/hector-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/alumnos\/hector-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/css\/alumnos\/hector.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -133,6 +145,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/css\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/style-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/css\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -152,6 +176,85 @@
       "oA" : 0,
       "oAP" : "\/dashboard.html",
       "oF" : 0
+    },
+    "\/images\/1.2-foto01-calmacentroderehabilitacion-scaled.jpg" : {
+      "ft" : 16384,
+      "iS" : 179013,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/1.2-foto01-calmacentroderehabilitacion-scaled.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/2-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 130337,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/2-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/Avatar.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/Avatar.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/favicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/favicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/Indicios-de-Malestar.jpg" : {
+      "ft" : 16384,
+      "iS" : 151798,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/Indicios-de-Malestar.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/marcaExpoArtcom.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/marcaExpoArtcom.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/marcaExpoArtcomMonio.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/marcaExpoArtcomMonio.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/images\/Sinergia.png" : {
       "ft" : 32768,
