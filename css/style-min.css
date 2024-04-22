@@ -121,6 +121,7 @@ header{
 #crearExpo, #votaciones{
     display: inline-block;
     vertical-align: top;
+    width: 50%;
 }
 .Corto, .Completo{
     width: 80%;
@@ -152,6 +153,22 @@ header{
     }
     &:active{
         background-color: #bb4602;
+    }
+}
+input,select,textarea{
+    color:#2A2A2A;
+    background: white;
+    padding:16px 32px;
+    margin:1rem;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    border: 2px solid #f25c05;
+    &:focus,&:focus-visible,&:focus-within{
+        border: 2px solid #bb4602;
+        outline: #bb4602 auto 2px;
     }
 }
 @media screen and (min-width: 768px){
