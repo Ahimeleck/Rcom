@@ -292,6 +292,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/sincronizar.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sincronizar.html",
+      "oF" : 0
     }
   },
   "hooks" : [
