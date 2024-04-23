@@ -44,6 +44,9 @@
 @media screen and (min-width: 768px){
     .Fichas {
         grid-template-columns: repeat(2, 1fr)!important;
+        .FichasContainer {
+            width: 95%;
+        }
     }
 }
 /*ESTILOS DE LAPTOP*/
@@ -61,4 +64,10 @@
         margin: 12px 15px;
         width: initial;
     }
+    /*ESTILOS DE PANTALLAS GRANDES*/
+@media screen and (min-width: 1620px){
+    .Fichas {
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+}
 }
