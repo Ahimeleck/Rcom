@@ -185,6 +185,14 @@
       "oAP" : "\/dashboard.html",
       "oF" : 0
     },
+    "\/Formularios.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Formularios.html",
+      "oF" : 0
+    },
     "\/images\/1.2-foto01-calmacentroderehabilitacion-scaled.jpg" : {
       "ft" : 16384,
       "iS" : 179013,
@@ -264,6 +272,32 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/images\/Morfosis.png" : {
+      "ft" : 32768,
+      "iS" : 575414,
+      "oA" : 0,
+      "oAP" : "\/images\/Morfosis.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/images\/Sensorial.png" : {
+      "ft" : 32768,
+      "iS" : 132087,
+      "oA" : 0,
+      "oAP" : "\/images\/Sensorial.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/Sinergia.png" : {
       "ft" : 32768,
       "iS" : 1924749,
@@ -290,6 +324,17 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/js\/script-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/script-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/js\/script.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -307,6 +352,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sincronizar.html",
+      "oF" : 0
+    },
+    "\/usuarios.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/usuarios.html",
       "oF" : 0
     }
   },
