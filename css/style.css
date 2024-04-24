@@ -172,6 +172,110 @@ input,select,textarea{
     }
 }
 
+#usuarios {
+    padding: 4rem 10%;
+    .usuario {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap:8px;
+        margin: 1em 0;
+        .nombreCorreo{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        img{
+            width: 60px;
+        }
+        div{
+            flex:auto;
+        }
+        .material-symbols-outlined{
+            width: 27px;
+            color: #FFF;
+            background: #f25c05;
+            text-align: center;
+            height: 27px;
+            padding: 5px;
+            border-radius: 20px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.contenedorPaginacion{
+    .paginacion{
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            max-width: 500px;
+            margin: 2em auto;
+            padding-inline-start: 0px;
+            & > li:nth-child(7) > a > span{
+                margin-left: 0;
+                margin-right: 4px;
+            }
+            li{
+                width: 36px;
+                a{
+                    color:#2B2B2B;
+                    cursor: pointer;
+                    text-decoration: none;
+                    padding: 5px;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 32px;
+                    border: 2px solid #2b2b2b00;
+                    text-align: center;
+                    display: block;
+                    &.activo{
+                        border: 2px solid #f25c05;
+                        background:#f25c05;
+                        color: white;
+                        &:hover{
+                            border: 2px solid #f25c05;
+                        }
+                    }
+                    .material-symbols-outlined{
+                        vertical-align: top;
+                        text-align: center;
+                        width: 20px;
+                        margin-left: 4px;
+                    }
+                    &:hover{
+                        border: 2px solid #2B2B2B;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inputIcono{
+    position: relative;
+    input{
+        padding-left: 36px;
+        width: 100%;
+        margin: 1rem 0;
+        &[type=search] {
+            outline-offset: 1px;
+        }
+    }
+    span{
+        color: #2B2B2B;
+        position: absolute;
+        left: 10px;
+        top: 30%;
+    }
+}
+
 #barraProgreso {
     width: 0;
     background-color: #f25c05;
