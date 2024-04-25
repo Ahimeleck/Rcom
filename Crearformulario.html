@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sincronizar | Expo Artcom</title>
+    <title>Nuevo Formulario | Expo Artcom</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -29,7 +29,7 @@
                     <li><a href="#fichas"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract</gf-load-font></span><span class="texto">Fichas</a></li>
                     <li><a href="#votaciones"><span class="icon-asset material-symbols-outlined"><gf-load-font>how_to_vote</gf-load-font></span><span class="texto">Votaciones</a></li>
                     <li><a href="#configuracion"><span class="icon-asset material-symbols-outlined"><gf-load-font>settings</gf-load-font></span><span class="texto">Configuración</a></li>
-                    <li><a href="usuarios.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>person</gf-load-font></span><span class="texto">Usuarios</span></a></li>
+                    <li><a href="#usuarios"><span class="icon-asset material-symbols-outlined"><gf-load-font>person</gf-load-font></span><span class="texto">Usuarios</span></a></li>
                 </ul>
             </nav>
             <a href="#" id="cerrarMenu">
@@ -48,22 +48,82 @@
         <header>
             <!--Caro-->
             <h1>
-                Sincronizar
+                Nuevo Formulario
             </h1>
             <a href="#">
                 <img src="images/Avatar.svg" alt="Avatar">
             </a>
         <!--/Caro-->
     </header>
-    <main id="sincronizar">
-        <p>Oprime el botón de sincornizar para que los datos de materias, profesores y alumnos de Artcom se sincronicen con los datos del sistema académico</p>
-        <section>
-            <a href="#" id="btnSincronizar" class="boton">Sincronizar</a>
-            <div id="barraProgreso"></div>
-            <h2 id="completado"></h2>
-            <h3>Última Sincronización</h3>
-            <h4 id="ultimaSincronizacion">28/10/2023 - 02:24:34</h4>
+    <main id="Nuevoformulario">
+
+    <div class="searchContainer">  
+        <div class="buscar">
+            <a href="#">
+                <span class="material-symbols-outlined">search</span>
+                Buscar
+            </a>
+        </div>
+    </div>
+
+        <section id="formularioActual">
+            <div class="fila">
+                <div id="crearFormulario">
+                    <a href="#">
+                        <div>
+                            <h3>Formulario sin título</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
+
+ <!--Preguntas-->
+        <section id="crearPregunta">
+            <div class="leftcolumn">
+                    <div class="Pregunta">
+                            <a href="#">
+                                <div>
+                                    <h3>Pregunta sin título</h3>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="Respuesta">
+                        <h3>Texto de respuesta corta</h3>
+                    </div>     
+            </div>        
+                    
+            <div class="rightcolumn">
+                    <div class="selectorpregunta">
+                        <span class="material-symbols-outlined">
+                        Upload_file
+                        </span>
+                            <h3> Subir Archivo</h3>
+                        <span class="material-symbols-outlined">
+                        Expand_more
+                        </span>
+                    </div>
+
+                 <div class="column">
+                    <div class="Iconos">
+                        <span class="material-symbols-outlined">
+                            Content_Copy
+                        </span>
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                        <span class="material-symbols-outlined">
+                            Add_box
+                        </span>
+                    </div> 
+                </div>
+            </div>        
+        </section>
+
+        <div class="crearBoton">
+             <a href="#" class="boton">Crear</a>
+        </div>
+
     </main>
     <script src="js/script.js"></script>
 </body>
