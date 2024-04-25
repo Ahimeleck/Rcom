@@ -27,6 +27,26 @@
     }
   }
 
+  #configuracion{
+    padding: 4rem 10%;
+    select{
+        margin-left: 0;
+    }
+    input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+}
+
+  #asignarVotantes{
+        display: flex;
+        div{
+            display:flex;
+            flex:1;
+        }
+  }
+
 
   #fichas > div > div > a.Ficha.box-four > span{
     font-size: 95px;
