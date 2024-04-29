@@ -1,6 +1,3 @@
-Aquí tienes el código con las secciones "Votantes", "Código" e "Impresión" envueltas en cajas `<div>`:
-
-    ```html
     <!DOCTYPE html>
     <html lang="es">
     
@@ -26,13 +23,13 @@ Aquí tienes el código con las secciones "Votantes", "Código" e "Impresión" e
                 <img class="Corto" src="images/marcaExpoArtcomMonio.svg">
                 <nav>
                     <ul>
-                        <li><a href="#inicio"><span class="icon-asset material-symbols-outlined"><gf-load-font>home</gf-load-font></span><span class="texto">Inicio</span></a></li>
+                        <li><a href="dashboard.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>home</gf-load-font></span><span class="texto">Inicio</span></a></li>
                         <li><a href="#crear-fichas"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract_edit</gf-load-font></span><span class="texto">Crear fichas</a></li>
                         <li><a href="#expos"><span class="icon-asset material-symbols-outlined"><gf-load-font>calendar_today</gf-load-font></span><span class="texto">Expos</a></li>
                         <li><a href="#fichas"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract</gf-load-font></span><span class="texto">Fichas</a></li>
                         <li><a href="#votaciones"><span class="icon-asset material-symbols-outlined"><gf-load-font>how_to_vote</gf-load-font></span><span class="texto">Votaciones</a></li>
                         <li><a href="#configuracion"><span class="icon-asset material-symbols-outlined"><gf-load-font>settings</gf-load-font></span><span class="texto">Configuración</a></li>
-                        <li><a href="#usuarios"><span class="icon-asset material-symbols-outlined"><gf-load-font>person</gf-load-font></span><span class="texto">Usuarios</span></a></li>
+                        <li><a href="usuarios.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>person</gf-load-font></span><span class="texto">Usuarios</span></a></li>
                     </ul>
                 </nav>
                 <a href="#" id="cerrarMenu">
@@ -59,6 +56,7 @@ Aquí tienes el código con las secciones "Votantes", "Código" e "Impresión" e
             <!--/Caro-->
         </header>
         <main id="configuracion">
+            <form action="#">
             <select name="" id="">
                 <option selected>Vox Populli</option>
                 <option>Enfoques</option>
@@ -68,9 +66,7 @@ Aquí tienes el código con las secciones "Votantes", "Código" e "Impresión" e
             <section id="asignarVotantes">
                 <div class="caja">
                     <p>Votantes</p>
-                    <form action="#">
                         <input type="number" id="numero" name="numero" min="1" max="100" required>
-                    </form>
                 </div>
                 <div class="caja">
                     <p>Códigos</p>
@@ -81,32 +77,31 @@ Aquí tienes el código con las secciones "Votantes", "Código" e "Impresión" e
                     <button class="boton">Crear PDF</button>
                 </div>
             </section>
+        </form>
               
             <h2>Habilitar votación</h2>
               <p>En esta sección podrás activar el estado activo de las votaciones</p>
-              <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+              <div class="Activar">
+                <label for="admin">Activar</label>
+                <div class="button r" id="button-1">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                </div>
+            </div>
               <h2>Programar votación</h2>
               <p>Apertura</p>
               <div class="docs-datepicker">
                 <!-- Primer campo de entrada de fecha -->
                 <div class="input-group">
-                    <input id='fieldDate1' type="text" class="form-control docs-date" name="date1" placeholder="Pick a date">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default docs-datepicker-trigger" disabled>
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                        </button>
-                    </span>
+                    <input id='fieldDate1' type="date" class="form-control docs-date" name="date1">
                 </div>
                 <!-- Segundo campo de entrada de fecha -->
-                <p>cierre</p>
+                <p>Cierre</p>
                 <div class="input-group">
-                    <input id='fieldDate2' type="text" class="form-control docs-date" name="date2" placeholder="Pick a date">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default docs-datepicker-trigger" disabled>
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                        </button>
-                    </span>
+                    <input id='fieldDate2' type="date" class="form-control docs-date" name="date2" >
                 </div>
+                <button class="boton guardar-btn">Guardar</button>
     </body>
     <!--Fin del código-->
     
