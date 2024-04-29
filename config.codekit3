@@ -25,12 +25,28 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/crear_expo.html" : {
+    "\/Configuracion.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/crear_expo.html",
+      "oAP" : "\/Configuracion.html",
+      "oF" : 0
+    },
+    "\/crearExpo_inicio.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/crearExpo_inicio.html",
+      "oF" : 0
+    },
+    "\/crearExpo_input.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/crearExpo_input.html",
       "oF" : 0
     },
     "\/Crearformulario.html" : {
@@ -247,6 +263,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/images\/foto-obra.jpg" : {
+      "ft" : 16384,
+      "iS" : 124715,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/foto-obra.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/Indicios-de-Malestar.jpg" : {
       "ft" : 16384,
       "iS" : 151798,
@@ -372,6 +401,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/PODIUM LILI.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/PODIUM LILI.html",
+      "oF" : 0
+    },
     "\/sincronizar.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -386,6 +423,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/usuarios.html",
+      "oF" : 0
+    },
+    "\/Votacion_detalle.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Votacion_detalle.html",
       "oF" : 0
     }
   },
