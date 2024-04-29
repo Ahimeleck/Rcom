@@ -26,3 +26,10 @@ header a{
         font-size: 36px;
     }
 }
+
+/*desk*/
+@media screen and (min-width: 1280px){
+    header h1{
+        font-size: 40px;
+    }
+}

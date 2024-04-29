@@ -1,73 +1,78 @@
 .FichasContainer {
-      background-color: #F2F2F2; 
-      border-radius: 35px; 
-      padding: 20px;
-      margin: 15px auto;
-      width:90%;
-      box-sizing: border-box;
-  .Fichas {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 10px;
-      width: calc(100% - 10px);
-      margin-bottom: 20px; 
-  }
+    background-color: #F2F2F2;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 15px auto;
+    width: 90%;
+    box-sizing: border-box;
 }
-  
-  .Ficha {
-      text-align: left;
-      background-color: #2B2B2B; 
-      border-radius: 10px 10px 10px 0; 
-      color: #FFFFFF;
-      padding: 20px;
-      text-decoration: none;
-      h4 {
-        font-weight: 400;
-        font-size: 1.2rem;
-    }
-  }
 
-
-  #fichas > div > div > a.Ficha.box-four > span{
-    font-size: 95px;
-  }
-  .box-one, .box-two, .box-three, .box-four {
-      border-left: 10px solid #F25C05;
-  }
-  .box-four {
-      background-color: #F25C05; 
-      border-left: 10px solid #2B2B2B; 
-  }
-
-
-/*ESTILOS DE TABLET*/
-@media screen and (min-width: 768px){
-    .Fichas {
-        grid-template-columns: repeat(2, 1fr)!important;
-        .FichasContainer {
-            width: 95%;
-        }
-    }
+.Fichas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: calc(100% - 10px);
+    margin-bottom: 20px;
 }
-/*ESTILOS DE LAPTOP*/
-@media screen and (min-width: 1024px){
-    .Fichas {
-        grid-template-columns: repeat(2, 1fr)!important;
-        h3 {
-            font-size: 18px;
-        }
-        h4 {
-            font-size: 14px;
-        }
-    }
-    .FichasContainer {
-        margin: 12px 15px;
-        width: initial;
-    }
-    /*ESTILOS DE PANTALLAS GRANDES*/
-@media screen and (min-width: 1620px){
-    .Fichas {
-        grid-template-columns: repeat(1, 1fr)!important;
-    }
+
+.Ficha {
+    text-align: left;
+    background-color: #2B2B2B;
+    border-radius: 10px 10px 10px 0;
+    color: #FFFFFF;
+    padding: 20px;
+    text-decoration: none;
 }
+
+.Ficha h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+#configuracion {
+    padding: 4rem 10%;
+}
+
+#podium {
+    padding: 4rem 10%;
+    margin-left: 0;
+}
+
+#podium input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#podium .caja1 {
+    width: 40%;
+    background-color: #2a2a2a;
+    border-radius: 31px;
+    padding: 20px;
+    align-self: center;
+}
+
+#podium .caja2 {
+    background-color: rgba(217, 217, 217, 0.5);
+    padding: 10px;
+}
+
+#podium .recuadro {
+    border: 2px solid #d9d9d9;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#podium .caja3 {
+    background-color: #f25c05;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
 }

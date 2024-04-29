@@ -48,7 +48,7 @@
 }
 
 
-/*--------------------------------*/
+/*---------------------------crear expo inicio--------------------------------*/
 
  #nuevaExpo #crearExpo > a > div {
     text-align: center;
@@ -123,7 +123,7 @@
     }
   }
 
-  #nuevaExpo #crearExpo{
+#nuevaExpo #crearExpo{
     width: 87%;
     border-radius: 25px;
 }
@@ -167,5 +167,45 @@
   @media screen and (min-width: 1309px){
 
   }
-  
+/*--------pagination-----------*/
+
+
+
+/*---------------------------crear expo input--------------------------------*/
+
+#nameExpo #crearExpo {
+    background-color: #f5f5f5;
+}
+#nameExpo a{
+    color: #2B2B2B;
+}
+
+#nameExpo #crearExpo > a > div{
+    text-align: left;
+    margin-left: 25px;
+}
+
+#nameExpo #nuevaExpo #crearExpo > a > div > h3 {
+    font-size: 32px;
+}
+
+#nameExpo .exposPasadas > a > div > h3 {
+    font-size: 24px;
+    text-align: center;
+}
+#nameExpo .exposPasadas a{
+    justify-content: space-between;
+}
+.moduloBoton {
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    margin: 12px 15px;
+}
+#nameExpo .moduloBoton .boton{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+
   
