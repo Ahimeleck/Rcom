@@ -185,6 +185,8 @@
 #nameExpo #crearExpo > a > div{
     text-align: left;
     margin-left: 25px;
+    width: auto;
+    flex: none;
 }
 
 #nameExpo #nuevaExpo #crearExpo > a > div > h3 {
@@ -229,7 +231,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin: 12px 70px;
+    margin: 12px auto;
 }
 #expoCreada section {
     background-color: #f5f5f5;
