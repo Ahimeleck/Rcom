@@ -46,3 +46,31 @@ document.addEventListener("DOMContentLoaded", function inicializarBarraDeProgres
         ultimaSincronizacion.textContent = fechaFormateada;
     }
 });
+
+function abrirModal(idModal) {
+    document.getElementById(idModal).style.display = "block";
+}
+
+function cerrarModal(idModal) {
+    document.getElementById(idModal).style.display = "none";
+}
+
+function guardarUsuario() {
+    // Aquí puedes agregar la lógica para guardar el usuario
+    cerrarModal('modalCrearUsuario');
+}
+
+function confirmarBorrado() {
+    // Aquí puedes agregar la lógica para borrar el usuario
+    cerrarModal('modalConfirmarBorrado');
+    // Ocultar el usuario correspondiente
+    let usuarioAEliminar = document.querySelector('.usuario.visible');
+    if (usuarioAEliminar) {
+        usuarioAEliminar.style.display = 'none';
+    }
+}
+
+function cancelarBorrado() {
+    cerrarModal('modalConfirmarBorrado');
+}
+

@@ -23,13 +23,13 @@
             <img class="Corto" src="images/marcaExpoArtcomMonio.svg">
             <nav>
                 <ul>
-                    <li><a href="#inicio"><span class="icon-asset material-symbols-outlined"><gf-load-font>home</gf-load-font></span><span class="texto">Inicio</span></a></li>
+                    <li><a href="dashboard.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>home</gf-load-font></span><span class="texto">Inicio</span></a></li>
                     <li><a href="#crear-fichas"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract_edit</gf-load-font></span><span class="texto">Crear fichas</a></li>
                     <li><a href="#expos"><span class="icon-asset material-symbols-outlined"><gf-load-font>calendar_today</gf-load-font></span><span class="texto">Expos</a></li>
                     <li><a href="#fichas"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract</gf-load-font></span><span class="texto">Fichas</a></li>
                     <li><a href="#votaciones"><span class="icon-asset material-symbols-outlined"><gf-load-font>how_to_vote</gf-load-font></span><span class="texto">Votaciones</a></li>
                     <li><a href="#configuracion"><span class="icon-asset material-symbols-outlined"><gf-load-font>settings</gf-load-font></span><span class="texto">Configuración</a></li>
-                    <li><a href="#usuarios"><span class="icon-asset material-symbols-outlined"><gf-load-font>person</gf-load-font></span><span class="texto">Usuarios</span></a></li>
+                    <li><a href="usuarios.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>person</gf-load-font></span><span class="texto">Usuarios</span></a></li>
                 </ul>
             </nav>
             <a href="#" id="cerrarMenu">
@@ -48,7 +48,7 @@
         <header>
             <!--Caro-->
             <h1>
-                Crear Expo
+                Expos
             </h1>
             <a href="#">
                 <img src="images/Avatar.svg" alt="Avatar">
@@ -56,7 +56,6 @@
         <!--/Caro-->
     </header>
     <main id="nuevaExpo">
-        
         <section id="expo">
               <div class="fila">
                   <div id="crearExpo">
@@ -93,10 +92,29 @@
                   <div class="exposPasadas">
                     <!--Expos Pasadas-->
                     <a href="#">
-                        <img src="images/Vertice.png" alt="">
+                        <img src="images/Sinergia.png" alt="">
                         <div>
-                            <h3>Vértice</h3>
-                            <h4>Otoño 2023</h4>
+                            <h3>Sinergia</h3>
+                            <h4>Primavera 2023</h4>
+                        </div>
+                      <div>
+                          <span class="material-symbols-outlined">
+                              edit
+                          </span>
+                          <span class="material-symbols-outlined">
+                              delete
+                          </span>   
+                      </div>
+                    </a>
+                </div>
+
+                <div class="exposPasadas">
+                    <!--Expos Pasadas-->
+                    <a href="#">
+                        <img src="images/Sensorial.png" alt="">
+                        <div>
+                            <h3>Sensorial</h3>
+                            <h4>Otoño 2022</h4>
                         </div>
                       <div>
                           <span class="material-symbols-outlined">
@@ -114,8 +132,8 @@
                     <a href="#">
                         <img src="images/Vertice.png" alt="">
                         <div>
-                            <h3>Vértice</h3>
-                            <h4>Otoño 2023</h4>
+                            <h3>RE</h3>
+                            <h4>Primavera 2022</h4>
                         </div>
                       <div>
                           <span class="material-symbols-outlined">
@@ -131,29 +149,10 @@
                 <div class="exposPasadas">
                     <!--Expos Pasadas-->
                     <a href="#">
-                        <img src="images/Vertice.png" alt="">
+                        <img src="images/Morfosis.png" alt="">
                         <div>
-                            <h3>Vértice</h3>
-                            <h4>Otoño 2023</h4>
-                        </div>
-                      <div>
-                          <span class="material-symbols-outlined">
-                              edit
-                          </span>
-                          <span class="material-symbols-outlined">
-                              delete
-                          </span>   
-                      </div>
-                    </a>
-                </div>
-
-                <div class="exposPasadas">
-                    <!--Expos Pasadas-->
-                    <a href="#">
-                        <img src="images/Vertice.png" alt="">
-                        <div>
-                            <h3>Vértice</h3>
-                            <h4>Otoño 2023</h4>
+                            <h3>Mórfosis</h3>
+                            <h4>Otoño 2021</h4>
                         </div>
                       <div>
                           <span class="material-symbols-outlined">
@@ -169,8 +168,28 @@
                       <!--/Expos Pasadas-->
               </div>
           </section> 
-          <a href="#" class="boton">Sincronizar</a> 
-          <input type="email" name="" id="" placeholder="email">    
+           
+          <div class="contenedorPaginacion">
+            <div class="paginacion">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">arrow_back_ios</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#" class="activo">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">arrow_forward_ios</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
       </main>
     <script src="js/script.js"></script>
 </body>

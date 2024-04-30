@@ -6,7 +6,9 @@
 #crearExpo a{
     color: #fff;
     text-decoration: none;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
 }
 #crearExpo .material-symbols-outlined{
@@ -28,6 +30,7 @@
 #crearExpo > a > div{
     text-align: left;
     display: inline-block;
+    -webkit-flex: 1;
     flex: 1;
     vertical-align: middle;
     margin-left: 25px;
@@ -81,6 +84,7 @@
   }
 
   .exposPasadas > a > div:nth-child(2){
+    display: -webkit-flex;
     display: flex;
   }
   .exposPasadas > a > div:nth-child(2){
@@ -140,21 +144,31 @@
 
   @media screen and (min-width: 768px){
     .exposPasadas a {
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: row;
         flex-direction: row;
+        -webkit-flex-wrap: nowrap;
         flex-wrap: nowrap;
+        -webkit-align-items: center;
         align-items: center;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
     }
     .exposPasadas > a > div:nth-child(2) {
+        -webkit-align-items: center;
         align-items: center;
+        -webkit-flex: 1;
         flex: 1;
+        -webkit-column-gap: 1rem;
+        -moz-column-gap: 1rem;
         column-gap: 1rem;
         h4{
             text-align: left;
         }
     }
     #nuevaExpo .fila {
+        -webkit-flex-direction: column;
         flex-direction: column;
     }
     .exposPasadas img{
@@ -186,6 +200,7 @@
     text-align: left;
     margin-left: 25px;
     width: auto;
+    -webkit-flex: none;
     flex: none;
 }
 
@@ -198,6 +213,7 @@
     text-align: center;
 }
 #nameExpo .exposPasadas a{
+    -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 .moduloBoton{
@@ -205,22 +221,30 @@
     border-radius: 30px;
     margin: 12px 15px;
     padding: 10px;
+    display: -webkit-flex;
     display: flex;
 }
 .botonesCrearExpo {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-items: flex-end;
     align-items: flex-end;
 }
 #moduloImagenExpoNueva .moduloBoton .boton {
     color: #fff;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
 } 
 #moduloCrearExpo .moduloBoton .boton {
     color: #fff;
     color: #fff;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -229,7 +253,9 @@
 #expoCreada a {
     color: #2B2B2B;
     text-decoration: none;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     margin: 12px 70px;
 }
@@ -242,7 +268,9 @@
     background-color: #f5f5f5;
     border-radius: 30px;
     margin: 12px 20px;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
 }
 #expoCreada h4 {
