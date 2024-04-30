@@ -13,11 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="./src/main.css">
 </head>
 
 <body id="cuerpo" class="expandido">
     <aside>
-        <!--SIDEBAR-->
+        <!--Héctor-->
         <div class="sidebar">
             <img class="Completo" src="images/marcaExpoArtcom.svg">
             <img class="Corto" src="images/marcaExpoArtcomMonio.svg">
@@ -42,18 +44,18 @@
                 <span class="texto">Cerrar menú</span>
             </a>
         </div>
-        <!--/SIDEBAR-->
+        <!--/Héctor-->
     </aside>
     <section id="contenido">
         <header>
-            <!--HEADER-->
+            <!--Caro-->
             <h1>
-                Crear Expo
+                Expos
             </h1>
             <a href="#">
                 <img src="images/Avatar.svg" alt="Avatar">
             </a>
-        <!--/HEADER-->
+        <!--/Caro-->
     </header>
 
     <!--Name Expo-->
@@ -102,9 +104,26 @@
                         <input type="time" name="" id="">
                     </a>
                 </div>
-                <div class="moduloBoton">
-                    <img src="" alt="">
-                    <a href="#" class="boton">Elige imagen</a> 
+                    <div class="botonesCrearExpo">
+                        <section id="moduloImagenExpoNueva">
+                            <div class="moduloBoton">
+                                <div class="drop-zone">
+                                    <span class="drop-zone__prompt">Arrastra una foto aqui o has click para subir</span>
+                                    <input type="file" name="myFile" class="drop-zone__input">
+                                  </div>   
+                            </div>  
+                            
+                            <script src="./src/main.js"></script> 
+                        </section>
+                        <section id="moduloCrearExpo">
+                            <div class="moduloBoton">
+                                <a href="#" class="boton">Borrar avance</a> 
+                                <a href="#" class="boton">Crear</a>  
+                            </div>   
+                        </section>
+                        <a href="#" class="boton">Salir</a> 
+                    </div>
+                    
                 </div>
             </div>
         </main>
