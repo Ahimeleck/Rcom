@@ -257,8 +257,13 @@
     display: flex;
     -webkit-align-items: center;
     align-items: center;
+    margin: 12px 70px;
+}
+
+#expoCreada .boton {
     margin: 12px auto;
 }
+
 #expoCreada section {
     background-color: #f5f5f5;
     border-radius: 30px;
