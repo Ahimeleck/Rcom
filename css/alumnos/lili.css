@@ -62,12 +62,14 @@
 #podium .caja2 {
     background-color: rgba(217, 217, 217, 0.5);
     padding: 10px;
+    border-radius: 31px;
 }
 
 #podium .recuadro {
     border: 2px solid #d9d9d9;
     padding: 10px;
     margin-top: 10px;
+    border-radius: 31px;
 }
 
 #podium .caja3 {
@@ -75,49 +77,82 @@
     padding: 20px;
     text-align: center;
     color: #fff;
+    border-radius: 31px;
 }
 
-#configuracion{
+#configuracion {
 
-input, select, textarea, .boton {
-    margin: 1rem 0;
-    width: 100%;
-    box-sizing: border-box;
-}
-.boton {
-    background: #c3bcbc;
-}
-.guardar-btn {
-    width: 50%;
-    display: block;
-    padding: auto;
-    margin: auto;
-}
-.Activar {
-    width: 100%;
-    box-sizing: border-box;
-    color: rgb(42, 42, 42);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(245, 245, 245);
-    padding: 16px 32px;
-    margin: 1rem auto;
-    border-radius: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(245, 245, 245);
-    border-image: initial;
-}
+    input,
+    select,
+    textarea,
+    .boton {
+        margin: 1rem 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .button.r {
+        margin: initial;
+    }
+
+    .boton {
+        background: #c3bcbc;
+    }
+
+    .guardar-btn {
+        width: 100%;
+        display: block;
+        padding: auto;
+        margin: auto;
+    }
+
+    .Activar {
+        width: 100%;
+        box-sizing: border-box;
+        color: rgb(42, 42, 42);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(245, 245, 245);
+        padding: 16px 32px;
+        margin: 1rem auto;
+        border-radius: 20px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(245, 245, 245);
+        border-image: initial;
+    }
 }
 
-/*Tablet*/
-@media screen and (min-width: 768px){
+/*ESTILOS DE TABLET*/
+@media screen and (min-width: 768px) {
+    .Fichas {
+        grid-template-columns: repeat(2, 1fr) !important;
 
+        .FichasContainer {
+            width: 95%;
+        }
+    }
 }
-/*Laptop*/
-@media screen and (min-width: 1024px){
 
+/*ESTILOS DE LAPTOP*/
+@media screen and (min-width: 1024px) {
+    .fichas {
+        margin: 12px 15px;
+        width: initial;
+    }
+   .asignarv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+   }
+}
+
+/*ESTILOS DE PANTALLAS GRANDES*/
+@media screen and (min-width: 1620px) {
+    .Fichas {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }

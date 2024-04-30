@@ -64,17 +64,19 @@
             </select>
             <h2>Asignar Votantes</h2>
             <section id="asignarVotantes">
-                <div class="caja">
+                <div class="asignarv">
+                    <div>
                     <p>Votantes</p>
                         <input type="number" id="numero" name="numero" min="1" max="100" required>
                 </div>
-                <div class="caja">
+                <div>
                     <p>Códigos</p>
                     <button class="boton">Generar</button>
                 </div>
-                <div class="caja">
+                <div>
                     <p>Impresión</p>
                     <button class="boton">Crear PDF</button>
+                </div>
                 </div>
             </section>
         </form>
@@ -90,18 +92,23 @@
                 </div>
             </div>
               <h2>Programar votación</h2>
-              <p>Apertura</p>
-              <div class="docs-datepicker">
-                <!-- Primer campo de entrada de fecha -->
-                <div class="input-group">
-                    <input id='fieldDate1' type="date" class="form-control docs-date" name="date1">
+              <div class="asignarv">
+                <div>
+                    <p>Apertura</p>
+              <input id='fieldDate1' type="date" class="form-control docs-date" name="date1">
+              <button class="boton guardar-btn">Guardar</button>  
                 </div>
-                <!-- Segundo campo de entrada de fecha -->
+              
+              <div>
                 <p>Cierre</p>
-                <div class="input-group">
-                    <input id='fieldDate2' type="date" class="form-control docs-date" name="date2" >
+                <input id='fieldDate2' type="date" class="form-control docs-date" name="date2" >
                 </div>
-                <button class="boton guardar-btn">Guardar</button>
+                
+                <div>
+
+                </div>
+            </div>
+            
     </body>
     <!--Fin del código-->
     
