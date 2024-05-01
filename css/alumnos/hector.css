@@ -1,5 +1,5 @@
 /*--------CREAR FORMULARIOS--------------*/
-#crearFormularios{
+#crearFormularios {
     background-color: #2b2b2b;
     border-radius: 30px;
     margin: 12px 20px;
@@ -7,14 +7,15 @@
     margin-left: auto;
     margin-right: auto;
     width: 65%;
-    
-    a{
+
+    a {
         color: #fff;
         text-decoration: none;
         display: flex;
         align-items: center;
     }
-    .material-symbols-outlined{
+
+    .material-symbols-outlined {
         background: #F25C05;
         border-radius: 10px;
         padding: 10px;
@@ -23,93 +24,109 @@
         display: inline-block;
         width: 40px;
         height: 40px;
-        font-variation-settings: 
-        'FILL'0,
-        'wght' 1000,
-        'GRAD' 0,
-        'opsz' 48;
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 1000,
+            'GRAD' 0,
+            'opsz' 48;
     }
 
-    > a > div{
+    >a>div {
         text-align: left;
         display: inline-block;
         flex: 1;
         vertical-align: middle;
         margin-left: 25px;
     }
-    > a > div > h3{
+
+    >a>div>h3 {
         font-size: 22px;
         font-weight: bold;
         margin-bottom: 0px;
         margin-top: 30px;
 
     }
-    
-     > a > div > h4{
+
+    >a>div>h4 {
         font-size: 12px;
         font-weight: normal;
         margin-bottom: 30px;
         margin-top: 15px;
     }
 }
-#formularios #crearFormularios  {
+
+#formularios #crearFormularios {
     border-radius: 25px;
-    > a > div{
+    width: 90%;
+
+    &>a>div {
         text-align: center;
-  }
-  > a > div > h3 {
-    margin-bottom: 30px;
-    font-size: 18px;
-  }
-  .material-symbols-outlined {
-    margin-left: 20px;
-    font-size: 35px;
-    width: 35px;
-    height: 35px;
+    }
+
+    >a>div>h3 {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .material-symbols-outlined {
+        margin: 20px;
+        font-size: 35px;
+        width: 35px;
+        height: 35px;
+    }
+
+    >a>div {
+        margin-left: 5px;
+    }
 }
-> a > div {
-    margin-left: 5px;
-}   
-}
+
 /*---------FORMULARIOS PASADOS-----------*/
 .formulariosPasados {
     background-color: #f5f5f5;
     border-radius: 30px;
     margin: 12px 15px;
     padding: 22px;
-    width: 50%;
+    width: 76%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 
-    a{
+    a {
         color: #2b2b2b;
-         text-decoration: none;
-     }
-     > a > div > h3{
+        text-decoration: none;
+    }
+
+    >a>div>h3 {
         font-size: 25px;
         text-align: center;
     }
-    > a > div > h4{
+
+    >a>div>h4 {
         font-size: 25px;
         text-align: right;
     }
-    > a > div:nth-child(2){
+
+    >a>div:nth-child(2) {
         display: flex;
         align-items: center;
         flex: 1;
         column-gap: 1rem;
-      }
-      > a > div:nth-child(2){
-        h3, h4{
+    }
+
+    >a>div:nth-child(2) {
+
+        h3,
+        h4 {
             width: 50%;
         }
+
         h3 {
             font-size: 20px;
             margin-top: 10px;
             margin-bottom: 10px;
             text-align: right;
         }
+
         h4 {
             font-size: 20px;
             margin-top: 10px;
@@ -117,31 +134,32 @@
             text-align: right;
             font-weight: 500;
         }
-}
-> a > div:nth-child(3){
-    text-align: center;
-    .material-symbols-outlined{
-    background: #F25C05;
-    color: #fff;
-    border-radius: 25px;
-    padding: 10px;
-    margin: 0 12px;
-    font-size: 25px;
-    display: inline-block;
-    vertical-align: middle;
-    width: 25px;
-    height: 25px;
-    font-variation-settings:
-  'FILL' 0,
-  'wght' 1000,
-  'GRAD' 0,
-  'opsz' 48
-  
+    }
+
+    >a>div:nth-child(3) {
+        text-align: center;
+
+        .material-symbols-outlined {
+            background: #F25C05;
+            color: #fff;
+            border-radius: 25px;
+            padding: 10px;
+            margin: 0 12px;
+            font-size: 25px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 25px;
+            height: 25px;
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 1000,
+                'GRAD' 0,
+                'opsz' 48
+        }
     }
 }
-}
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .formulariosPasados a {
         display: flex;
         flex-direction: row;
@@ -149,74 +167,89 @@
         align-items: center;
         justify-content: space-between;
     }
-    .formulariosPasados > a > div:nth-child(2) {
+
+    .formulariosPasados>a>div:nth-child(2) {
         align-items: center;
-        h4{
+
+        h4 {
             text-align: left;
         }
     }
+
     #formularios .fila {
         flex-direction: column;
     }
-    .formulariosPasados img{
+
+    .formulariosPasados img {
         width: 150px;
         border-radius: 10px;
     }
-  }
-  @media screen and (min-width: 1024px){
-    #crearFormularios, #votaciones {
+}
+
+@media screen and (min-width: 1024px) {
+
+    #crearFormularios,
+    #votaciones {
         width: 70%;
     }
-  }
-  @media screen and (min-width: 1309px){
+}
 
-  }
+@media screen and (min-width: 1309px) {}
+
 /*--------SIDEBAR--------------*/
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #2a2a2a;
-  font-family: "Poppins";
-  font-size: 16px;
-  position: fixed;
-  height: 100%;
-  width: 52px;
-  left: 0;
-  top: 0;
-  transition: all 0.5s ease-in-out;
-  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a2a2a;
+    font-family: "Poppins";
+    font-size: 16px;
+    position: fixed;
+    height: 100%;
+    width: 52px;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+
+    ul {
         list-style: none;
         padding: 0;
         margin: 0;
     }
+
     li {
         margin-bottom: 24px;
     }
+
     a {
-        color: #fff!important;
+        color: #fff !important;
         display: flex;
         align-items: center;
-        text-decoration: none!important;
+        text-decoration: none !important;
         border-radius: 5px;
         flex-direction: column;
         flex-wrap: nowrap;
+
         :hover {
             color: #c2c2c2;
         }
+
         :active {
             color: #F25C05;
-          }
+        }
     }
-    nav{
-        margin-top:70px
+
+    nav {
+        margin-top: 70px
     }
+
     .icon-asset {
         font-size: 25px;
-        margin-right:2px;
+        margin-right: 2px;
         transform: scale(1.4);
     }
-    .texto{
+
+    .texto {
         font-size: 14px;
     }
 }
@@ -226,19 +259,19 @@
 
 /*--------NUEVO FORMULARIO--------------*/
 
-#Nuevoformulario{
+#Nuevoformulario {
     padding-right: 60px;
 }
 
-.buscar{
-display: flex;
-justify-content: flex-end;
-margin-right: 50px;
+.buscar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
 }
 
 
 
-#crearFormulario{
+#crearFormulario {
     background-color: #2b2b2b;
     width: -webkit-fill-available;
     height: 100%;
@@ -251,7 +284,7 @@ margin-right: 50px;
 
 }
 
-#crearPregunta{
+#crearPregunta {
     background-color: #d9d9d9;
     display: flow-root;
     border-radius: 30px;
@@ -260,92 +293,95 @@ margin-right: 50px;
     border-bottom-left-radius: 0px;
     margin-right: 50px;
 
-    }
-   
-        
-        #Pregunta{
-            background-color: #F25C05;
-            border-radius: 15px;
-            box-sizing: border-box;
-            width: 95%;
-            display: flex;
-            color: #fff;
-            font-size: 24px;
-            text-decoration: none;
-            }
+}
 
-        #Respuesta{
-            background-color: #fff;
-            border-style: solid;
-            box-sizing: border-box;
-            width: 95%;
-            display: flex;
-            border-color: #F25C05;
-            border-radius: 15px;
-            color: #d9d9d9;
-            font-size: 24px;
-            font-weight: Medium;
-            margin-top: 35px;
-            }  
-      
-        #TipoPregunta{
-            background-color: #fff;
-            width: 95%;
-            display: flex;
-            border-style: solid;
-            box-sizing: border-box;
-            border-radius: 15px;
-            border-color: #F25C05;
-            border-radius: 15px;
-            margin: 15px;
-            font-size: 24px;
-            color: #2b2b2b;
-            }
-    
-            
 
-.column{
+#Pregunta {
+    background-color: #F25C05;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 95%;
+    display: flex;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#Respuesta {
+    background-color: #fff;
+    border-style: solid;
+    box-sizing: border-box;
+    width: 95%;
+    display: flex;
+    border-color: #F25C05;
+    border-radius: 15px;
+    color: #d9d9d9;
+    font-size: 24px;
+    font-weight: Medium;
+    margin-top: 35px;
+}
+
+#TipoPregunta {
+    background-color: #fff;
+    width: 95%;
+    display: flex;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border-color: #F25C05;
+    border-radius: 15px;
+    margin: 15px;
+    font-size: 24px;
+    color: #2b2b2b;
+}
+
+
+
+.column {
     float: left;
     width: 50%;
 }
 
-.rightcolumn{
+.rightcolumn {
     width: 50%;
 }
+
 .row:after {
     display: table;
     clear: both;
-  }
-.columnIcon{
+}
+
+.columnIcon {
     float: right;
     width: 50%;
     padding: 10px;
     border-left: solid 2px;
 
-    .Iconos{
-        display:flex;
+    .Iconos {
+        display: flex;
         box-sizing: border-box;
         align-items: center;
         justify-content: space-evenly;
 
-        .material-symbols-outlined{
+        .material-symbols-outlined {
             transform: scale(1.8);
             margin: 15px;
             margin-bottom: 15px;
         }
-    } 
+    }
 }
 
-.crearBoton{
+.crearBoton {
     justify-content: end;
     display: flex;
     margin: 20px;
 
-    .boton{
+    .boton {
         background-color: #c2c2c2;
         color: #2b2b2b;
     }
-    .boton:hover{
+
+    .boton:hover {
         color: #fff;
     }
 }
@@ -354,31 +390,37 @@ margin-right: 50px;
     .column {
         width: 100%;
     }
-    #Pregunta, #Respuesta, #TipoPregunta {
+
+    #Pregunta,
+    #Respuesta,
+    #TipoPregunta {
         font-size: 18px;
     }
 }
 
 /*--------Fichas--------------*/
 
-.Fboton{
+.Fboton {
     display: flex;
     justify-content: flex-end;
-    .boton{
+
+    .boton {
         background-color: #c2c2c2;
-    color: #2b2b2b;
+        color: #2b2b2b;
     }
-    .boton:hover{
+
+    .boton:hover {
         color: #fff;
     }
-    .buscar{
+
+    .buscar {
         display: flex;
         justify-content: flex-end;
         margin-right: 20px;
-        }
+    }
 }
 
-#retiFichas{
+#retiFichas {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -386,77 +428,93 @@ margin-right: 50px;
     margin: 20px;
 }
 
-.modFicha{
+.modFicha {
 
     background-color: #2b2b2b;
     border-radius: 15px;
     position: relative;
     color: white;
-    
-    .boton{
+
+    .boton {
         padding: 8px;
         position: absolute;
         top: 0;
         right: 0;
     }
-.boton:nth-child(1) {
-  right: 0;
-  top: 0;
-}
 
-.boton:nth-child(2) {
-  right: 2.3em;
-  top: 0;
-}
-   
-    img{
+    .boton:nth-child(1) {
+        right: 0;
+        top: 0;
+    }
+
+    .boton:nth-child(2) {
+        right: 2.3em;
+        top: 0;
+    }
+
+    img {
         border-radius: 15px;
     }
-    div{
+
+    div {
         padding: 8px;
     }
 }
 
 
 
-/*Smartphone*/
-@media screen and (min-width: 600px){
+/*Mini Tablets*/
+@media screen and (min-width: 600px) {
 
-    #retiFichas{
+    #retiFichas {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    #retiFichas > .modFicha > div {
-        h2{
+    #retiFichas>.modFicha>div {
+        h2 {
             font-size: 22px;
         }
-        h3{
+
+        h3 {
             font-size: 17px;
         }
-        p{
+
+        p {
             font-size: 14px;
         }
     }
-    
-}
-/*lap*/
-@media screen and (min-width: 1024px){
 
-    #retiFichas{
+}
+
+/*Smartphone*/
+@media screen and (min-width: 768px) {
+    .formulariosPasados {
+        width: 84%;
+    }
+
+}
+
+/*lap*/
+@media screen and (min-width: 1024px) {
+
+    #retiFichas {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
-    #retiFichas > .modFicha > div {
+
+    #retiFichas>.modFicha>div {
         h2 {
             font-size: 15px;
         }
+
         h3 {
             font-size: 12px;
             line-height: 1.4em;
-            font-weight:normal;
+            font-weight: normal;
         }
-        p{
+
+        p {
             font-size: 10px;
             line-height: 1.4em;
             font-weight: lighter;
@@ -466,25 +524,28 @@ margin-right: 50px;
 }
 
 /*Big desk*/
-@media screen and (min-width: 1600px){
-    #retiFichas{
+@media screen and (min-width: 1600px) {
+    #retiFichas {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-    #retiFichas > .modFicha > div {
-    h2 {
-        font-size: 15px;
+
+    #retiFichas>.modFicha>div {
+        h2 {
+            font-size: 15px;
+        }
+
+        h3 {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 10px;
+            line-height: 1.4em;
+            font-weight: lighter;
+            text-align: justify;
+        }
     }
-    h3 {
-        font-size: 12px;
-        line-height: 1.4em;
-        font-weight:normal;
-    }
-    p{
-        font-size: 10px;
-        line-height: 1.4em;
-        font-weight: lighter;
-        text-align: justify;
-    }
-}
 }
