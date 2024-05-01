@@ -69,6 +69,10 @@
      color: #2b2b2b;
       text-decoration: none;
   }
+
+.exposPasadas > a > div{
+    width: 300px;
+}
   
   .exposPasadas > a > div > h3{
       font-size: 25px;
@@ -124,7 +128,7 @@
   }
 
 #nuevaExpo #crearExpo{
-    width: 87%;
+    width: 40%;
     border-radius: 25px;
 }
 
@@ -182,6 +186,14 @@
     color: #2B2B2B;
 }
 
+#nuevaExpo > div > div.botonesCrearExpo > a{
+    color: #fff;
+    background: #2b2b2b;
+    font-size: 32px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 #nameExpo #crearExpo > a > div{
     text-align: left;
     margin-left: 25px;
@@ -194,23 +206,38 @@
 }
 
 #nameExpo .exposPasadas > a > div > h3 {
-    font-size: 24px;
-    text-align: center;
+    font-size: 20px;
+    text-align:left;
 }
 #nameExpo .exposPasadas a{
     justify-content: space-between;
 }
+#nameExpo .exposPasadas {
+    width: 35%;
+}
+
+#moduloCrearExpo > div > a:nth-child(1){
+    background: #989898;
+}
+
 .moduloBoton{
     background-color: #f5f5f5;
     border-radius: 30px;
     margin: 12px 15px;
     padding: 10px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .botonesCrearExpo {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 86%;
 }
 #moduloImagenExpoNueva .moduloBoton .boton {
     color: #fff;
@@ -270,7 +297,13 @@
     font-size: 14px;
     text-align: center;
   }
-
+  
+  #nameExpo #crearExpo > a{
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
 /*--------------------------- expo creada--------------------------------*/
 
 #expoCreada a {

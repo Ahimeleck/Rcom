@@ -57,67 +57,51 @@
     </header>
     <main id="Nuevoformulario">
 
-    <div class="searchContainer">  
-        <div class="buscar">
-            <a href="#">
-                <span class="material-symbols-outlined">search</span>
-                Buscar
-            </a>
-        </div>
+<div class="buscar">
+    <div class="inputIcono">        
+        <input type="search" name="" id="buscar" placeholder="Buscar">
+        <span class="material-symbols-outlined">
+            search
+        </span>
     </div>
-
+</div>
         <section id="formularioActual">
-            <div class="fila">
-                <div id="crearFormulario">
-                    <a href="#">
-                        <div>
-                            <h3>Formulario sin título</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <div class="fila"></div>
+            <input type="w3-input" id="crearFormulario" value="Formulario sin título">
         </section>
 
  <!--Preguntas-->
         <section id="crearPregunta">
-            <div class="leftcolumn">
-                    <div class="Pregunta">
-                            <a href="#">
-                                <div>
-                                    <h3>Pregunta sin título</h3>
-                                </div>
-                            </a>
-                    </div>
-                    <div class="Respuesta">
-                        <h3>Texto de respuesta corta</h3>
-                    </div>     
-            </div>        
-                    
-            <div class="rightcolumn">
-                    <div class="selectorpregunta">
-                        <span class="material-symbols-outlined">
-                        Upload_file
-                        </span>
-                            <h3> Subir Archivo</h3>
-                        <span class="material-symbols-outlined">
-                        Expand_more
-                        </span>
-                    </div>
-
-                 <div class="column">
-                    <div class="Iconos">
-                        <span class="material-symbols-outlined">
-                            Content_Copy
-                        </span>
-                        <span class="material-symbols-outlined">
-                            delete
-                        </span>
-                        <span class="material-symbols-outlined">
-                            Add_box
-                        </span>
+<div class="row">
+            <div class="column">
+                            <input type="w3-input" id="Pregunta" value="Pregunta sin título">
+                            <input type="w3-input" id="Respuesta" value="Texto de respuesta corta">
+            </div>           
+            <div class="column">  
+                    <select name="Categoría" id="TipoPregunta">
+                        <option value="Materias">Materias</option>
+                        <option value="Parrafo">Párrafo</option>
+                        <option value="Respuestacorta">Respuesta Corta</option>
+                        <option value="Variasopciones">Varias opciones</option>
+                        <option value="Subir archivo">Subir Archivo</option>
+                        <option value="Credenciales">Credenciales</option>
+                        <option value="Variasrespuestas">Varias Respuestas</option>
+                    </select>
+                    <div class="columnIcon">
+                        <div class="Iconos">
+                            <span class="material-symbols-outlined">
+                                Content_Copy
+                            </span>
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                            <span class="material-symbols-outlined">
+                                Add_box
+                            </span>
+                        </div>  
                     </div> 
-                </div>
-            </div>        
+            </div> 
+</div>      
         </section>
 
         <div class="crearBoton">

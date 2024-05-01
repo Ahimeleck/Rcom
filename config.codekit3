@@ -117,6 +117,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/css\/alumnos\/dane-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/alumnos\/dane-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/css\/alumnos\/dane.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -219,6 +231,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dashboard.html",
+      "oF" : 0
+    },
+    "\/expoCreada.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/expoCreada.html",
       "oF" : 0
     },
     "\/Formularios.html" : {
@@ -344,6 +364,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/obra-mod.jpg" : {
+      "ft" : 16384,
+      "iS" : 66303,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/obra-mod.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/Sensorial.png" : {
       "ft" : 32768,
       "iS" : 132087,
@@ -413,12 +446,20 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/PODIUM LILI.html" : {
+    "\/Mis_votos.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/PODIUM LILI.html",
+      "oAP" : "\/Mis_votos.html",
+      "oF" : 0
+    },
+    "\/PODIUMLILI.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/PODIUMLILI.html",
       "oF" : 0
     },
     "\/sincronizar.html" : {
