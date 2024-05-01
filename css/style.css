@@ -148,7 +148,7 @@ header{
         background-color: #bb4602;
     }
 }
-input,select,textarea{
+input,ft,textarea{
     color:#2A2A2A;
     background: white;
     padding:16px 32px;
@@ -314,6 +314,9 @@ input,select,textarea{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+
+
+
 .modal-contenido {
     position: absolute;
     top: 50%;
@@ -344,6 +347,8 @@ input,select,textarea{
         background: #9a9a9a;
     }
 }
+
+
 
 .cerrar-modal {
     position: absolute;
@@ -503,3 +508,9 @@ input,select,textarea{
         font-size: 16px;
     }
 }
+
+
+
+
+
+
