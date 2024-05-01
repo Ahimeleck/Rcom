@@ -156,7 +156,7 @@ header{
         background-color: #bb4602;
     }
 }
-input,select,textarea{
+input,ft,textarea{
     color:#2A2A2A;
     background: white;
     padding:16px 32px;
@@ -319,7 +319,7 @@ input,select,textarea{
         color: #2B2B2B;
         position: absolute;
         left: 10px;
-        top: 30%;
+        top: 32px;
     }
 }
 
@@ -346,6 +346,9 @@ input,select,textarea{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+
 
 .modal-contenido {
     position: absolute;
@@ -383,6 +386,8 @@ input,select,textarea{
         background: #9a9a9a;
     }
 }
+
+
 
 .cerrar-modal {
     position: absolute;
@@ -550,3 +555,9 @@ input,select,textarea{
         font-size: 16px;
     }
 }
+
+
+
+
+
+
