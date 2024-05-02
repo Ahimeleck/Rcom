@@ -59,75 +59,70 @@
     </header>
 
     <!--Name Expo-->
-        <main id="nameExpo">
-            <div class="fila">
-                <div>
-                    <a href="#">
-                        <div>
-                            <h3>Nombre</h3>
-                        </div>
-                        <input type="name" name="" id="" placeholder="nombre de expo">  
-                    </a>
-                </div>
-                <div class="exposPasadas">
-                    <!--Expos Pasadas-->
-                    <a href="#">
-                        <div>
-                            <h3>Fecha de inicio</h3>
-                        </div>
-                        <input type="date" name="" id="">
-                        <div>
-                            <h3>Hora de inicio</h3>
-                        </div>
-                        <input type="time" name="" id=""> 
-                    </a>
-                    <a href="#">
-                        <div>
-                            <h3>Fecha de cierre</h3>
-                        </div>
-                        <input type="date" name="" id="">
-                        <div>
-                            <h3>Hora de cierre</h3>
-                        </div>
-                        <input type="time" name="" id="">
-                    </a>
-                    <a href="#">
-                        <div>
-                            <h3>Fecha de cierre (fichas)</h3>
-                        </div>
-                        <input type="date" name="" id=""> 
-                        
-                        <div>
-                            <h3>Hora de cierre (fichas)</h3>
-                        </div>
-                        <input type="time" name="" id="">
-                    </a>
-                </div>
-                    <div class="botonesCrearExpo">
-                        <section id="moduloImagenExpoNueva">
-                            <div class="moduloBoton">
-                                <div class="drop-zone">
-                                    <span class="drop-zone__prompt">Arrastra una foto aqui o has click para subir</span>
-                                    <input type="file" name="myFile" class="drop-zone__input">
-                                  </div>   
-                            </div>  
-                            
-                            <script src="./src/main.js"></script> 
-                        </section>
-                        <section id="moduloCrearExpo">
-                            <div class="moduloBoton">
-                                <a href="#" class="boton">Borrar avance</a> 
-                                <a href="#" class="boton">Crear</a>
-                            </div>   
-                        </section>
-                        <a href="#" class="boton material-symbols-outlined">
-                            exit_to_app
-                        </a> 
+        <div class="fila">
+            <div id="nameExpo">
+                <a href="#">
+                    <div>
+                        <h3>Nombre</h3>
                     </div>
-                    
-                </div>
+                    <input type="name" name="" id="" placeholder="nombre de expo">  
+                </a>
             </div>
-        </main>
+            <div id="expoInputs">
+                    <!--Expos Pasadas-->
+                <a href="#">
+                    <div>
+                        <h3>Fecha de inicio</h3>
+                    </div>
+                    <input type="date" name="" id="">
+                    <div>
+                        <h3>Hora de inicio</h3>
+                    </div>
+                    <input type="time" name="" id=""> 
+                </a>
+                <a href="#">
+                    <div>
+                            <h3>Fecha de cierre</h3>
+                    </div>
+                    <input type="date" name="" id="">
+                    <div>
+                        <h3>Hora de cierre</h3>
+                    </div>
+                    <input type="time" name="" id="">
+                </a>
+                <a href="#">
+                    <div>
+                        <h3>Fecha de cierre (fichas)</h3>
+                    </div>
+                    <input type="date" name="" id=""> 
+                        
+                    <div>
+                        <h3>Hora de cierre (fichas)</h3>
+                    </div>
+                    <input type="time" name="" id="">
+                </a>
+            </div>
+            <div class="botonesCrearExpo">
+                <section id="moduloImagenExpoNueva">
+                    <div class="moduloBoton">
+                        <div class="drop-zone">
+                            <span class="drop-zone__prompt">Arrastra una foto aqui o has click para subir</span>
+                            <input type="file" name="myFile" class="drop-zone__input">
+                        </div>   
+                    </div>
+                    <script src="./src/main.js"></script> 
+                </section>
+                <section id="moduloCrearExpo">
+                    <div class="moduloBoton">
+                        <a href="#" class="boton">Borrar avance</a> 
+                        <a href="#" class="boton">Crear</a>
+                    </div>   
+                </section>
+                    <a href="#" class="boton material-symbols-outlined">
+                            exit_to_app
+                    </a> 
+            </div>
+        </div>
     <!--/Name Expo-->    
     <script src="js/script.js"></script>
 </body>
