@@ -3,21 +3,25 @@
     border-radius: 30px;
     margin: 12px 15px;
 }
-#votaciones a {
-    color: #fff;
+#votaciones a{
+   color: #fff;
     text-decoration: none;
 }
-#votaciones .material-symbols-outlined {
-    background: #f25c05;
+#votaciones .material-symbols-outlined{
+    background: #F25C05;
     border-radius: 10px;
     padding: 10px;
     margin-left: 25px;
     font-size: 40px;
     display: inline-block;
     vertical-align: middle;
-    font-variation-settings: "FILL" 0, "wght" 1000, "GRAD" 0, "opsz" 48;
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 48
 }
-#votaciones > a > div {
+#votaciones > a > div{
     text-align: left;
     display: inline-block;
     width: 60%;
@@ -26,14 +30,14 @@
     color: #2b2b2b;
 }
 
-#votaciones > a > div > h3 {
+#votaciones > a > div > h3{
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 0px;
     margin-top: 30px;
 }
 
-#votaciones > a > div > h4 {
+#votaciones > a > div > h4{
     font-size: 12px;
     font-weight: normal;
     margin-bottom: 30px;
@@ -47,9 +51,9 @@
     width: 100%;
 }
 
-#pantallaFichas {
+#pantallaFichas{
     padding: 5rem 10%;
-    section {
+    section{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -60,16 +64,16 @@
             background: #d9d9d930;
             border-radius: 35px;
             padding: 20px;
-            span {
+           span {
                 color: #f25c05;
                 text-align: center;
                 display: block;
                 font-size: 50px;
             }
-            p {
+            p{
                 text-align: center;
             }
-            .boton {
+            .boton{
                 background: #2b2b2b;
                 margin: 1rem auto;
                 &:hover {
@@ -77,55 +81,21 @@
                 }
             }
         }
-    }
-}
-#pantallaFormularioFichas {
-    .pasos {
-        margin:3rem;
-        height: 100%;
-        label {
-            margin: 1rem;
-            margin-top: 2rem;
-            font-weight: 600;
         }
-        input {
-            margin-top: 0;
-        }
-        .dropFile{
-            border-color: #f25c05;
-            border-style: dashed;
-            border-width: 2px;
-            padding: 3rem;
-            border-radius: 30px;
-            margin: 1rem;
-            display: flex;
-            flex-direction: column;
-            background-color: #d2d2d2;
-        }
-    }
-    .fila-auto{
-        display: flex;
-        div{
-            width: 100%;
-        }
-    }
-    .input-full-width{
-        width: 95%;
-    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
     #votaciones > a > div {
         width: 65%;
     }
     .fila {
         flex-direction: row;
     }
-    .fila .material-symbols-outlined {
+    .fila .material-symbols-outlined{
         margin-top: 15px;
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
     #votaciones > a > div {
         width: 50%;
     }
@@ -137,28 +107,16 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px){
     #pantallaFichas section {
         flex-direction: row;
-        div {
+        div{
             width: 335px;
         }
     }
 }
-@media screen and (min-width: 1309px) {
-    .fila .material-symbols-outlined {
+@media screen and (min-width: 1309px){
+    .fila .material-symbols-outlined{
         margin-top: 0px;
     }
-}
-.textCenter{
-    text-align: center;
-}
-.textBold{
-    font-weight: 700;
-}
-.textOrange{
-    color: #f25c05!important;
-}
-.displayNone{
-    display: none!important;
 }

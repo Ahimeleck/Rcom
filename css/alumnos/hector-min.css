@@ -318,7 +318,12 @@
     padding: 25px;
     border-bottom-left-radius: 0px;
     margin-right: 50px;
-
+    & > div > div:nth-child(2) > div > div > ul.default_option > li > div > p{
+        margin: 17px 0;
+    }
+    & > div > div:nth-child(2) > div > div > ul.select_ul > li > div > p{
+        margin: 10px 0;
+    }
 }
 
 
@@ -349,55 +354,168 @@
     margin-top: 35px;
 }
 
-#TipoPregunta {
+/*---------Inicio prueba selector---------*/
+
+
+
+
+.wrapper{
     background-color: #fff;
     width: 95%;
     display: -webkit-flex;
     display: flex;
+    height: 70px;
     border-style: solid;
     box-sizing: border-box;
     border-radius: 15px;
     border-color: #F25C05;
-    border-radius: 15px;
     margin: 15px;
     font-size: 24px;
     color: #2b2b2b;
+    padding: 0;
+    
+        .select_wrap{
+        width: 100%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        position: relative;
+
+                .default_option{
+                border-radius: 12px;
+                position: relative;
+                cursor: pointer;
+                list-style: none;
+                height: 70px;
+                margin:0;
+                -webkit-align-content: center;
+                align-content: center;
+
+                .option{
+
+                    .material-symbols-outlined{
+                            margin: 10px;
+                            margin-right: 20px;
+                            -webkit-transform: scale(1.5);
+                            transform: scale(1.5);
+                    }
+                }
+
+                    li{
+                    padding: 5px 5px;
+                    height: 70px;
+                    -webkit-align-content: center;
+                    align-content: center;
+                    }
+                    }
+        }
+    }
+
+.select_wrap .default_option:before{
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid;
+    border-color: transparent transparent #555555 #555555;
+    -webkit-transform: rotate(-45deg) scale(2);
+    transform: rotate(-45deg) scale(2);
+}
+
+.select_wrap .select_ul{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: auto;
+  background: #fff;
+  display: none;
+  list-style: none;
+}
+
+.select_wrap .select_ul li{
+  padding: 0 20px;
+  cursor: pointer;
+      &:first-child:hover{
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      }
+      &:last-child:hover{
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+}
+
+.select_wrap .option{
+display:-webkit-flex;
+display:flex;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.select_wrap .option .icon{
+	width: 40px;
+	height: 32px;
+  margin: 15px;
+}
+
+
+.select_wrap.active .select_ul{
+  display: block;
+  width:90%;
+  border-radius:15px;
+  z-index: 1;
+}
+
+.select_wrap.active .default_option:before{
+  top: 34px;
+  -webkit-transform: rotate(-225deg) scale(2);
+  transform: rotate(-225deg) scale(2);
 }
 
 
 
-.column {
-    float: left;
-    width: 50%;
-}
 
-.rightcolumn {
-    width: 50%;
-}
+/*---------Fin prueba selector---------*/
 
 .row:after {
     display: table;
     clear: both;
 }
 
+.column{
+    float: left;
+    width: 50%;
+}
 .columnIcon {
     float: right;
-    width: 50%;
     padding: 10px;
     border-left: solid 2px;
 
     .Iconos {
         display: -webkit-flex;
         display: flex;
-        box-sizing: border-box;
+        width: 50%;
         -webkit-align-items: center;
         align-items: center;
         -webkit-justify-content: space-evenly;
         justify-content: space-evenly;
 
+        .boton{
+            background-color: #d9d9d9;
+            color: #2b2b2b;
+            padding: 5px;
+            margin: 0%;
+        }
+        .boton:hover{
+            background-color: #c2c2c2;
+        }
+
         .material-symbols-outlined {
-            -webkit-transform: scale(1.8);
-            transform: scale(1.8);
+            -webkit-transform: scale(2);
+            transform: scale(2);
             margin: 15px;
             margin-bottom: 15px;
         }
@@ -422,6 +540,18 @@
 }
 
 @media screen and (max-width: 600px) {
+    #Nuevoformulario{
+        padding-right: 0%;
+    }
+
+    #crearPregunta {
+        background-color: #d9d9d9;
+        display: flow-root;
+        border-radius: 30px;
+        margin: 12px 20px;
+        padding: 25px;
+        border-bottom-left-radius: 0px;
+    }
     .column {
         width: 100%;
     }
