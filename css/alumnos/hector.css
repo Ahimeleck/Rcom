@@ -292,7 +292,12 @@
     padding: 25px;
     border-bottom-left-radius: 0px;
     margin-right: 50px;
-
+    & > div > div:nth-child(2) > div > div > ul.default_option > li > div > p{
+        margin: 17px 0;
+    }
+    & > div > div:nth-child(2) > div > div > ul.select_ul > li > div > p{
+        margin: 10px 0;
+    }
 }
 
 
@@ -343,6 +348,7 @@
         .select_wrap{
         width: 100%;
         user-select: none;
+        position: relative;
 
                 .default_option{
                 border-radius: 12px;
@@ -374,7 +380,7 @@
 .select_wrap .default_option:before{
     content: "";
     position: absolute;
-    top: 30px;
+    top: 24px;
     right: 20px;
     width: 6px;
     height: 6px;
@@ -385,7 +391,7 @@
 
 .select_wrap .select_ul{
   position: absolute;
-  top: 55px;
+  top: 45px;
   left: 0;
   width: auto;
   background: #fff;
@@ -394,13 +400,13 @@
 }
 
 .select_wrap .select_ul li{
-  padding: 10px 20px;
+  padding: 0 20px;
   cursor: pointer;
-      :first-child:hover{
+      &:first-child:hover{
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       }
-      :last-child:hover{
+      &:last-child:hover{
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
     }
@@ -420,12 +426,13 @@ align-items: center;
 
 .select_wrap.active .select_ul{
   display: block;
-  width:auto;
+  width:90%;
   border-radius:15px;
+  z-index: 1;
 }
 
 .select_wrap.active .default_option:before{
-  top: 45px;
+  top: 34px;
   transform: rotate(-225deg) scale(2);
 }
 
