@@ -241,6 +241,14 @@
       "oAP" : "\/expoCreada.html",
       "oF" : 0
     },
+    "\/FichasMaestros.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/FichasMaestros.html",
+      "oF" : 0
+    },
     "\/Formularios.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -350,6 +358,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/images\/me.jpeg" : {
+      "ft" : 16384,
+      "iS" : 204620,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/me.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/images\/Morfosis.png" : {
       "ft" : 32768,
@@ -484,6 +505,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/Votacion_detalle.html",
+      "oF" : 0
+    },
+    "\/votaciones.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/votaciones.html",
+      "oF" : 0
+    },
+    "\/vox-resultados.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/vox-resultados.html",
       "oF" : 0
     }
   },
