@@ -121,7 +121,7 @@ header{
 #crearExpo, #votaciones{
     display: inline-block;
     vertical-align: top;
-    width: 50%;
+    width: 90%;
 }
 .Corto, .Completo{
     width: 80%;
@@ -323,7 +323,7 @@ input,select,textarea{
     }
 }
 
-#misVotos{
+#misVotos, #Nuevoformulario{
     .inputIcono span{
         top: 32px;
     }
