@@ -290,6 +290,12 @@ input,select,textarea{
     }
 }
 
+#misVotos{
+    .inputIcono span{
+        top: 32px;
+    }
+}
+
 #barraProgreso {
     width: 0;
     background-color: #f25c05;
