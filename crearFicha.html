@@ -28,22 +28,22 @@
             <img class="Corto" src="images/marcaExpoArtcomMonio.svg">
             <nav>
                 <ul>
-                    <li><a href="#inicio"><span
+                    <li><a href="dashboard.html"><span
                                 class="icon-asset material-symbols-outlined"><gf-load-font>home</gf-load-font></span><span
                                 class="texto">Inicio</span></a></li>
-                    <li><a href="#crear-fichas"><span
+                    <li><a href="#"><span
                                 class="icon-asset material-symbols-outlined"><gf-load-font>contract_edit</gf-load-font></span><span
                                 class="texto">Crear fichas</a></li>
-                    <li><a href="#expos"><span
+                    <li><a href="crearExpo_inicio.html"><span
                                 class="icon-asset material-symbols-outlined"><gf-load-font>calendar_today</gf-load-font></span><span
                                 class="texto">Expos</a></li>
-                    <li><a href="#fichas"><span
+                    <li><a href="FichasMaestros.html"><span
                                 class="icon-asset material-symbols-outlined"><gf-load-font>contract</gf-load-font></span><span
                                 class="texto">Fichas</a></li>
-                    <li><a href="#votaciones"><span
+                    <li><a href="votaciones.html"><span
                                 class="icon-asset material-symbols-outlined"><gf-load-font>how_to_vote</gf-load-font></span><span
                                 class="texto">Votaciones</a></li>
-                    <li><a href="#configuracion"><span
+                    <li><a href="Configuracion.html"><span
                                 class="icon-asset material-symbols-outlined"><gf-load-font>settings</gf-load-font></span><span
                                 class="texto">Configuración</a></li>
                     <li><a href="usuarios.html"><span
@@ -75,21 +75,32 @@
             <!--/Caro-->
         </header>
         <main id="pantallaFormularioFichas">
-            <form action="">
+            <div>
                 <div id="paso1" class="pasos">
+                    <div class="textCenter">
+                        <button class="buttonCircle buttonOrange buttonNumber marginRight3" onclick="incrementPasos(1)">
+                            <span>1</span>
+                        </button>
+                        <button class="buttonCircle buttonGrey buttonNumber marginRight3" onclick="incrementPasos(2)">
+                            <span>2</span>
+                        </button>
+                        <button class="buttonCircle buttonGrey buttonNumber" onclick="incrementPasos(3)">
+                            <span>3</span>
+                        </button>
+                    </div>
                     <label>Nombre de la obra</label>
                     <input type="text" class="input-full-width" placeholder="Nombre de la obra">
 
                     <label>Autor(es)</label>
-                    <input type="text" class="input-full-width" placeholder="Introduzca autores">
+                    <input type="text" class="input-full-width" placeholder="Introduzca autor(es)">
                     <div class="fila-auto">
                         <div>
                             <label>Carrera</label>
-                            <input type="text" placeholder="Introduzca autores">
+                            <input type="text" placeholder="Carrera">
                         </div>
                         <div>
                             <label>Semestre</label>
-                            <input type="text" placeholder="Introduzca autores">
+                            <input type="text" placeholder="Semestre">
                         </div>
                     </div>
                     <label>Datos de la obra</label>
@@ -104,8 +115,32 @@
                             <input type="text" placeholder="Duración">
                         </div>
                     </div>
+                    <div class="textCenter">
+                        <button class="buttonCircle buttonGrey marginRight3">
+                            <span class="material-symbols-outlined">
+                                chevron_left
+                            </span>
+                        </button>
+                        <button class="buttonCircle buttonGrey" onclick="incrementPasos(2)">
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </button>
+                    </div>
+
                 </div>
                 <div id="paso2" class="pasos displayNone">
+                    <div class="textCenter">
+                        <button class="buttonCircle buttonGrey buttonNumber marginRight3" onclick="incrementPasos(1)">
+                            <span>1</span>
+                        </button>
+                        <button class="buttonCircle buttonOrange buttonNumber marginRight3" onclick="incrementPasos(2)">
+                            <span>2</span>
+                        </button>
+                        <button class="buttonCircle buttonGrey buttonNumber" onclick="incrementPasos(3)">
+                            <span>3</span>
+                        </button>
+                    </div>
                     <label>Descripción de la obra</label>
                     <textarea name="" id="" placeholder="Descripción" class="input-full-width" cols="30"
                         rows="10"></textarea>
@@ -114,8 +149,31 @@
                     <p>Puedes elegir 1 o más opciones</p>
                     <textarea name="" id="" placeholder="Descripción del enfoque" class="input-full-width" cols="30"
                         rows="10"></textarea>
+                        <div class="textCenter">
+                            <button class="buttonCircle buttonGrey marginRight3" onclick="incrementPasos(1)">
+                                <span class="material-symbols-outlined">
+                                    chevron_left
+                                </span>
+                            </button>
+                            <button class="buttonCircle buttonGrey" onclick="incrementPasos(3)">
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+                            </button>
+                        </div>
                 </div>
                 <div id="paso3" class="pasos displayNone">
+                    <div class="textCenter">
+                        <button class="buttonCircle buttonGrey buttonNumber marginRight3" onclick="incrementPasos(1)">
+                            <span>1</span>
+                        </button>
+                        <button class="buttonCircle buttonGrey buttonNumber marginRight3" onclick="incrementPasos(2)">
+                            <span>2</span>
+                        </button>
+                        <button class="buttonCircle buttonOrange buttonNumber" onclick="incrementPasos(3)">
+                            <span>3</span>
+                        </button>
+                    </div>
                     <div class="dropFile">
                         <div class="textCenter textOrange">
                             <span class="material-symbols-outlined">
@@ -126,8 +184,23 @@
                             Arrastra y suelta los archivos aquí
                         </div>
                     </div>
+                    <div class="textCenter">
+                        <a href="fichaEnviada.html" class="boton" style="display:inline-block">Enviar Ficha</a>
+                    </div>
+                    <div class="textCenter">
+                        <button class="buttonCircle buttonGrey marginRight3" onclick="incrementPasos(2)">
+                            <span class="material-symbols-outlined">
+                                chevron_left
+                            </span>
+                        </button>
+                        <button class="buttonCircle buttonGrey">
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </button>
+                    </div>
                 </div>
-            </form>
+            </div>
         </main>
         <script src="js/script.js"></script>
         <script>
