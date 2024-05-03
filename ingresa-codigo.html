@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fichas | Expo Artcom</title>
+    <title>Ingresa tu código | Expo Artcom</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -23,12 +23,12 @@
             <img class="Corto" src="images/marcaExpoArtcomMonio.svg">
             <nav>
                 <ul>
-                    <li><a href="dashboard.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>home</gf-load-font></span><span class="texto">Inicio</span></a></li>
-                    <li><a href="Fichas.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract_edit</gf-load-font></span><span class="texto">Crear fichas</a></li>
-                    <li><a href="crearExpo_inicio.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>calendar_today</gf-load-font></span><span class="texto">Expos</a></li>
-                    <li><a href="FichasMaestros.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract</gf-load-font></span><span class="texto">Fichas</a></li>
-                    <li><a href="votaciones.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>how_to_vote</gf-load-font></span><span class="texto">Votaciones</a></li>
-                    <li><a href="Configuracion.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>settings</gf-load-font></span><span class="texto">Configuración</a></li>
+                    <li><a href="#inicio"><span class="icon-asset material-symbols-outlined"><gf-load-font>home</gf-load-font></span><span class="texto">Inicio</span></a></li>
+                    <li><a href="#crear-fichas"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract_edit</gf-load-font></span><span class="texto">Crear fichas</a></li>
+                    <li><a href="#expos"><span class="icon-asset material-symbols-outlined"><gf-load-font>calendar_today</gf-load-font></span><span class="texto">Expos</a></li>
+                    <li><a href="#fichas"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract</gf-load-font></span><span class="texto">Fichas</a></li>
+                    <li><a href="#votaciones"><span class="icon-asset material-symbols-outlined"><gf-load-font>how_to_vote</gf-load-font></span><span class="texto">Votaciones</a></li>
+                    <li><a href="#configuracion"><span class="icon-asset material-symbols-outlined"><gf-load-font>settings</gf-load-font></span><span class="texto">Configuración</a></li>
                     <li><a href="usuarios.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>person</gf-load-font></span><span class="texto">Usuarios</span></a></li>
                 </ul>
             </nav>
@@ -48,30 +48,22 @@
         <header>
             <!--Caro-->
             <h1>
-                Fichas
+                Bienvenido
             </h1>
             <a href="#">
                 <img src="images/Avatar.svg" alt="Avatar">
             </a>
         <!--/Caro-->
     </header>
-    <main id="pantallaFichas">
-    <section>
-        <div>
-            <span class="material-symbols-outlined">
-                edit
-                </span>
-            <p> Prepara fichas detallas para destacar en la Expo Artcom, completando la información clave de tus obras.</p>
-            <a href="crearFicha.html" class="boton">Crear Ficha</a>
-        </div>
-        <div>
-            <span class="material-symbols-outlined">
-                edit_square
-                </span>
-            <p> Realiza las ediciones necesarias de tus fichas, según tus preferencias y necesidades.</p>
-            <a href="FichasMaestros.html" class="boton">Mis Fichas</a>
-        </div>
-    </section>
+    <main id="ingresaCodigo">
+        <img src="images/Vertice.png">
+        <section>
+            <h2>Ingresa tu código</h2>
+            <form action="" id="codigos">
+                <input type="text">
+                <a class="boton" href="Obras.html">Enviar</a>
+            </form>
+        </section>
     </main>
     <script src="js/script.js"></script>
 </body>

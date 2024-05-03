@@ -121,7 +121,7 @@ header{
 #crearExpo, #votaciones{
     display: inline-block;
     vertical-align: top;
-    width: 50%;
+    width: 90%;
 }
 .Corto, .Completo{
     width: 80%;
@@ -156,7 +156,7 @@ header{
         background-color: #bb4602;
     }
 }
-input,ft,textarea{
+input,select,textarea{
     color:#2A2A2A;
     background: white;
     padding:16px 32px;
@@ -319,6 +319,12 @@ input,ft,textarea{
         color: #2B2B2B;
         position: absolute;
         left: 10px;
+        top: 16px;
+    }
+}
+
+#misVotos, #Nuevoformulario{
+    .inputIcono span{
         top: 32px;
     }
 }

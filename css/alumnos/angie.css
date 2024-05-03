@@ -69,22 +69,33 @@
 .categorias{
     display: flex;
     margin: 35px;
+    justify-content: space-between;
     align-items: center;
     background-color: #F2F2F2;
     border-radius: 25px;
     padding: 1.3em;
 
-    >span{
+    >div>span{
         color: #F25C05;
         font-size: 4em;
         padding-right: 0.5em;
     }
 
-    >div>h3,p{
+    >div>div>h3,p{
         margin: 0;
     }
+    >div{
+        display: flex;
+    }
 }
-
+.angieheader{
+    >a>span{
+        font-size: 2.2em;
+        margin: 0.1em;
+        color: #2b2b2b;
+    
+    }
+}
 .podium-contenedor{
     background-color: #F2F2F2;
     padding: 35px;
@@ -136,7 +147,110 @@
     flex: 1;
 }
 
+.contenedor-texto-angie{
+    width:95%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
+.row-mod{
+    max-width: calc(100vw - 325px);
+    display: flex;
+    overflow-x: auto;
+}
+
+.row{
+    margin: 15px;
+    padding: 10px;
+
+    h1{
+        font-size:30px; 
+        font-weight: 700;
+    }
+}
+
+
+
+
+#retiFichasAngie{
+    display: block; 
+
+}
+
+.modFichaAngie{
+    min-width: 20rem;
+    height: auto;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    position: relative;
+    color: white;
+    margin: 15px;
+
+    .boton {
+        padding: 8px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    img{
+        border-radius: 15px 15px 0 0;
+    }
+    div{
+        padding: 15px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 10px;
+        line-height: 1.4em;
+    }
+    h2, h3{
+        margin: 5px;
+    }
+}
+
+.buscarAngie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 8px;
+    .boton {
+        margin: 1rem 0;
+        font-size: 1rem;
+        padding: 16px 16px;
+        font-weight: 400;
+    }
+    select{
+        width: 140px;
+        margin: 1rem 0;
+        padding: 16px;
+    }
+}
+ .select-angie{
+    margin-top: 0px;
+    margin-left: 15px;
+ }
+
+
+ #dosAngie {
+    border: 2px solid #F25C05;
+    border-radius: 20px;
+    background-color: white;
+    color: #F25C05;
+    font-size: 16px;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#dosAngie:hover {
+    background-color: #F25C05;
+    color: white;
+}
 
 /* estilos de tablet*/
 @media screen and (min-width: 768px){
