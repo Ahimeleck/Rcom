@@ -278,6 +278,7 @@ input,select,textarea{
         padding-left: 36px;
         width: 100%;
         margin: 1rem 0;
+        line-height: 1em;
         &[type=search] {
             outline-offset: 1px;
         }
