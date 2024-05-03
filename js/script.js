@@ -74,3 +74,29 @@ function cancelarBorrado() {
     cerrarModal('modalConfirmarBorrado');
 }
 
+// Función para manejar el click en la opción predeterminada
+function toggleActive() {
+    var parent = this.parentNode;
+    parent.classList.toggle("active");
+}
+
+// Función para manejar el click en las opciones de la lista
+function selectOption() {
+    var currentEle = this.innerHTML;
+    var defaultOption = document.querySelector(".default_option");
+    defaultOption.innerHTML = currentEle;
+    var selectWrap = this.closest(".select_wrap");
+    selectWrap.classList.remove("active");
+}
+
+// Seleccionar elementos con la clase "default_option" y agregar evento click
+var defaultOption = document.querySelector(".default_option");
+defaultOption.addEventListener("click", toggleActive);
+
+// Seleccionar elementos con la clase "select_ul li" y agregar evento click
+var selectListItems = document.querySelectorAll(".select_ul li");
+selectListItems.forEach(function(item) {
+    item.addEventListener("click", selectOption);
+});
+
+

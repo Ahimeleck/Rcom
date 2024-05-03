@@ -79,13 +79,6 @@
         }
     }
 }
-
-#paso4{
-    .dropFile{
-        border-color: transparent!important;
-    }
-}
-
 #pantallaFormularioFichas {
     .pasos {
         margin:3rem;
@@ -168,9 +161,6 @@
 }
 .displayNone{
     display: none!important;
-}
-.displayBlock{
-    display: block!important;
 }
 .buttonCircle {
     border: none;
