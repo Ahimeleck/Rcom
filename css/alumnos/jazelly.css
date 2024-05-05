@@ -5,13 +5,32 @@
     line-height: 1.5em;
     margin: 0px;
 }
+#ingresaCodigo {
+    padding: 4rem 10%;
+    section{
+        max-width: 400px;
+        margin: 0 auto;
+        h2{
+            font-size: 28px;
+        }
+        input{
+            margin: 1em 0;
+        }
+    }
+}
 
 /* estilos de tablet*/
 @media screen and (min-width: 768px){
     .podio-posicion {
         text-align: center;
     }
-
+    #ingresaCodigo section form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 /* estilos de laptop*/
 @media screen and (min-width: 1024px){

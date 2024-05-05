@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Expo | Expo Artcom</title>
+    <title>Votaciones | Expo Artcom</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -13,8 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.svg">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="./src/main.css">
 </head>
 
 <body id="cuerpo" class="expandido">
@@ -47,84 +45,84 @@
         <!--/Héctor-->
     </aside>
     <section id="contenido">
-        <header>
+        <header class="angieheader">
             <!--Caro-->
             <h1>
-                Expos
+                Votaciones
             </h1>
+            <a href="Mis_votos.html"><span class="material-symbols-outlined">
+                how_to_vote
+                </span>
+            </a>
+            <a href="Configuracion.html"><span class="material-symbols-outlined">
+                    settings
+            </span>
+            </a>
             <a href="#">
                 <img src="images/Avatar.svg" alt="Avatar">
             </a>
-        <!--/Caro-->
     </header>
+    <!--Votaciones maestros angie-->
+    <main id="pagVotaciones">
+        <div class="votacionesmaestros"> 
 
-    <!--Name Expo-->
-        <div class="fila">
-            <div id="nameExpo">
-                <a href="#">
+            <div class="categorias"> 
+                
                     <div>
-                        <h3>Nombre</h3>
+                        <span class="material-symbols-outlined">
+                            language
+                        </span>
+                        <div>
+                            <h3> Enfoques </h3>
+                            <p>Se reconocen los proyectos más destacados que han sido realizados con énfasis en cada uno de los Enfoques Artcom: Negocios, Fe, Entorno, Investigación.</p>   
+                        </div>
                     </div>
-                    <input type="name" name="" id="" placeholder="nombre de expo">  
-                </a>
+                    
+                    
+                    <a href="fichas-votar.html" class="boton"> votar</a>
+                  
             </div>
-            <div id="expoInputs">
-                    <!--Expos Pasadas-->
-                <a href="#">
+
+            <div class="categorias"> 
+
                     <div>
-                        <h3>Fecha de inicio</h3>
+                        <span class="material-symbols-outlined">
+                            social_leaderboard
+                            </span>
+                        <div>
+                            <h3> Platinum </h3>
+                            <p>Se reconoce a los proyectos más destacados por cada año de 
+                                cada carrera..</p>   
+                        </div>
                     </div>
-                    <input type="date" name="" id="">
-                    <div>
-                        <h3>Hora de inicio</h3>
-                    </div>
-                    <input type="time" name="" id=""> 
-                </a>
-                <a href="#">
-                    <div>
-                            <h3>Fecha de cierre</h3>
-                    </div>
-                    <input type="date" name="" id="">
-                    <div>
-                        <h3>Hora de cierre</h3>
-                    </div>
-                    <input type="time" name="" id="">
-                </a>
-                <a href="#">
-                    <div>
-                        <h3>Fecha de cierre (fichas)</h3>
-                    </div>
-                    <input type="date" name="" id=""> 
-                        
-                    <div>
-                        <h3>Hora de cierre (fichas)</h3>
-                    </div>
-                    <input type="time" name="" id="">
-                </a>
+                    
+                    <a href="fichas-votar.html" class="boton"> votar</a>
+                  
             </div>
-            <div class="botonesCrearExpo">
-                <section id="moduloImagenExpoNueva">
-                    <div class="moduloBoton">
-                        <div class="drop-zone">
-                            <span class="drop-zone__prompt">Arrastra una foto aqui o has click para subir</span>
-                            <input type="file" name="myFile" class="drop-zone__input">
-                        </div>   
+
+            <div class="categorias"> 
+
+                    <div>
+                        <span  class="material-symbols-outlined">
+                            diversity_1
+                            </span>
+                        <div>
+                            <h3> Vox Populli </h3>
+                            <p>Se reconoce los tres proyectos más votados 
+                            como favoritos o destacados por los asistentes a la Expo Artcom.</p>   
+                        </div>
                     </div>
-                    <script src="./src/main.js"></script> 
-                </section>
-                <section id="moduloCrearExpo">
-                    <div class="moduloBoton">
-                        <a href="#" class="boton">Borrar avance</a> 
-                        <a href="#" class="boton">Crear</a>
-                    </div>   
-                </section>
-                    <a href="#" class="boton material-symbols-outlined">
-                            exit_to_app
-                    </a> 
+
+                    
+                    <a href="vox-resultados.html" class="boton"> votar</a>
             </div>
+
+
         </div>
-    <!--/Name Expo-->    
+
+        <br><br><br><br><br><br><br><br>
+    </main>
     <script src="js/script.js"></script>
 </body>
 <!--Fin del código-->
-</html>    
+</html>

@@ -23,13 +23,13 @@
             <img class="Corto" src="images/marcaExpoArtcomMonio.svg">
             <nav>
                 <ul>
-                    <li><a href="#inicio"><span class="icon-asset material-symbols-outlined"><gf-load-font>home</gf-load-font></span><span class="texto">Inicio</span></a></li>
-                    <li><a href="#crear-fichas"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract_edit</gf-load-font></span><span class="texto">Crear fichas</a></li>
-                    <li><a href="#expos"><span class="icon-asset material-symbols-outlined"><gf-load-font>calendar_today</gf-load-font></span><span class="texto">Expos</a></li>
-                    <li><a href="#fichas"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract</gf-load-font></span><span class="texto">Fichas</a></li>
-                    <li><a href="#votaciones"><span class="icon-asset material-symbols-outlined"><gf-load-font>how_to_vote</gf-load-font></span><span class="texto">Votaciones</a></li>
-                    <li><a href="#configuracion"><span class="icon-asset material-symbols-outlined"><gf-load-font>settings</gf-load-font></span><span class="texto">Configuración</a></li>
-                    <li><a href="#usuarios"><span class="icon-asset material-symbols-outlined"><gf-load-font>person</gf-load-font></span><span class="texto">Usuarios</span></a></li>
+                    <li><a href="dashboard.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>home</gf-load-font></span><span class="texto">Inicio</span></a></li>
+                    <li><a href="Fichas.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract_edit</gf-load-font></span><span class="texto">Crear fichas</a></li>
+                    <li><a href="crearExpo_inicio.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>calendar_today</gf-load-font></span><span class="texto">Expos</a></li>
+                    <li><a href="FichasMaestros.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>contract</gf-load-font></span><span class="texto">Fichas</a></li>
+                    <li><a href="votaciones.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>how_to_vote</gf-load-font></span><span class="texto">Votaciones</a></li>
+                    <li><a href="Configuracion.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>settings</gf-load-font></span><span class="texto">Configuración</a></li>
+                    <li><a href="usuarios.html"><span class="icon-asset material-symbols-outlined"><gf-load-font>person</gf-load-font></span><span class="texto">Usuarios</span></a></li>
                 </ul>
             </nav>
             <a href="#" id="cerrarMenu">
@@ -57,67 +57,97 @@
     </header>
     <main id="Nuevoformulario">
 
-    <div class="searchContainer">  
-        <div class="buscar">
-            <a href="#">
-                <span class="material-symbols-outlined">search</span>
-                Buscar
-            </a>
-        </div>
+<div class="buscar">
+    <div class="inputIcono">        
+        <input type="search" name="" id="buscar" placeholder="Buscar">
+        <span class="material-symbols-outlined">
+            search
+        </span>
     </div>
-
+</div>
         <section id="formularioActual">
-            <div class="fila">
-                <div id="crearFormulario">
-                    <a href="#">
-                        <div>
-                            <h3>Formulario sin título</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <div class="fila"></div>
+            <input type="w3-input" id="crearFormulario" value="Formulario sin título">
         </section>
 
  <!--Preguntas-->
         <section id="crearPregunta">
-            <div class="leftcolumn">
-                    <div class="Pregunta">
-                            <a href="#">
-                                <div>
-                                    <h3>Pregunta sin título</h3>
-                                </div>
-                            </a>
-                    </div>
-                    <div class="Respuesta">
-                        <h3>Texto de respuesta corta</h3>
-                    </div>     
-            </div>        
-                    
-            <div class="rightcolumn">
-                    <div class="selectorpregunta">
-                        <span class="material-symbols-outlined">
-                        Upload_file
-                        </span>
-                            <h3> Subir Archivo</h3>
-                        <span class="material-symbols-outlined">
-                        Expand_more
-                        </span>
-                    </div>
+<div class="row">
+            <div class="column">
+                            <input type="w3-input" id="Pregunta" value="Pregunta sin título">
+                            <input type="w3-input" id="Respuesta" value="Texto de respuesta corta">
+            </div>           
 
-                 <div class="column">
-                    <div class="Iconos">
-                        <span class="material-symbols-outlined">
-                            Content_Copy
-                        </span>
-                        <span class="material-symbols-outlined">
-                            delete
-                        </span>
-                        <span class="material-symbols-outlined">
-                            Add_box
-                        </span>
+            <!---------Inicio prueba selector--------->
+            <div class="column">  
+                        <div class="wrapper">  
+                            <div class="select_wrap">
+                                <ul class="default_option">
+                                    <li>
+                                        <div class="option materia">
+                                          <div class=" material-symbols-outlined">Dictionary</div>
+                                          <p>Materias</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="select_ul">
+                                    <li>
+                                        <div class="option parrafo">
+                                          <div class="material-symbols-outlined">Subject</div>
+                                          <p>Párrafo</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="option short">
+                                          <div class="material-symbols-outlined">Short_text</div>
+                                          <p>Respuesta Corta</p>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                        <div class="option multiple">
+                                          <div class="material-symbols-outlined">Radio_Button_Checked</div>
+                                          <p>Varias Opciones</p>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="option upload">
+                                          <div class="material-symbols-outlined">Upload_file</div>
+                                          <p>Subir Archivos</p>
+                                        </div>
+                                    </li>
+                                   <li>
+                                      <div class="option credenciales">
+                                          <div class="material-symbols-outlined">Badge</div>
+                                          <p>Credenciales</p>
+                                        </div>
+                                    </li>
+                                   <li>
+                                      <div class="option respuestas">
+                                          <div class="material-symbols-outlined">Featured_play_list</div>
+                                          <p>Varias Respuestas</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+            </div>
+                        <!---------Final prueba selector--------->
+
+                    <div class="columnIcon">
+                        <div class="Iconos">
+                            <span class="boton material-symbols-outlined">
+                                Content_Copy
+                            </span>
+                            <span class="boton material-symbols-outlined">
+                                delete
+                            </span>
+                            <span class="boton material-symbols-outlined">
+                                Add_box
+                            </span>
+                        </div>  
                     </div> 
-                </div>
-            </div>        
+            </div> 
+</div>      
         </section>
 
         <div class="crearBoton">

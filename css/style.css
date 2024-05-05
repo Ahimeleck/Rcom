@@ -115,7 +115,7 @@ header{
 #crearExpo, #votaciones{
     display: inline-block;
     vertical-align: top;
-    width: 50%;
+    width: 90%;
 }
 .Corto, .Completo{
     width: 80%;
@@ -278,6 +278,7 @@ input,select,textarea{
         padding-left: 36px;
         width: 100%;
         margin: 1rem 0;
+        line-height: 1em;
         &[type=search] {
             outline-offset: 1px;
         }
@@ -286,7 +287,13 @@ input,select,textarea{
         color: #2B2B2B;
         position: absolute;
         left: 10px;
-        top: 30%;
+        top: 16px;
+    }
+}
+
+#misVotos, #Nuevoformulario{
+    .inputIcono span{
+        top: 32px;
     }
 }
 
@@ -313,6 +320,9 @@ input,select,textarea{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+
 
 .modal-contenido {
     position: absolute;
@@ -344,6 +354,8 @@ input,select,textarea{
         background: #9a9a9a;
     }
 }
+
+
 
 .cerrar-modal {
     position: absolute;
@@ -503,3 +515,9 @@ input,select,textarea{
         font-size: 16px;
     }
 }
+
+
+
+
+
+
