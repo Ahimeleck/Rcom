@@ -98,5 +98,3 @@ var selectListItems = document.querySelectorAll(".select_ul li");
 selectListItems.forEach(function(item) {
     item.addEventListener("click", selectOption);
 });
-
-
