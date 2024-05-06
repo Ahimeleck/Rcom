@@ -174,7 +174,7 @@ input,select,textarea{
 }
 #sincronizar {
     padding: 4rem 0;
-    p, section{
+    p, h2, section{
         width: 80%;
         margin: 2em auto;
     }
@@ -311,6 +311,7 @@ input,select,textarea{
         padding-left: 36px;
         width: 100%;
         margin: 1rem 0;
+        line-height: 1em;
         &[type=search] {
             outline-offset: 1px;
         }
