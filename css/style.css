@@ -164,7 +164,7 @@ input,select,textarea{
 }
 #sincronizar {
     padding: 4rem 0;
-    p, section, h2{
+    p, h2, section{
         width: 80%;
         margin: 2em auto;
     }

@@ -25,93 +25,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/3.webp" : {
-      "ft" : 8388608,
-      "iS" : 67840,
-      "oA" : 0,
-      "oAP" : "\/3.webp",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-default",
-      "rq" : 75
-    },
-    "\/4.webp" : {
-      "ft" : 8388608,
-      "iS" : 33928,
-      "oA" : 0,
-      "oAP" : "\/4.webp",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-default",
-      "rq" : 75
-    },
-    "\/5.jpeg" : {
-      "ft" : 16384,
-      "iS" : 110569,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/5.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/6.jpeg" : {
-      "ft" : 16384,
-      "iS" : 624202,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/6.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/8.jpeg" : {
-      "ft" : 16384,
-      "iS" : 231587,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/8.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/9.png" : {
-      "ft" : 32768,
-      "iS" : 702140,
-      "oA" : 0,
-      "oAP" : "\/9.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/10.jpeg" : {
-      "ft" : 16384,
-      "iS" : 1684878,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/10.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/Configuracion.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -366,6 +279,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/fichaEnviada.html",
+      "oF" : 0
+    },
+    "\/fichas-votar.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fichas-votar.html",
       "oF" : 0
     },
     "\/Fichas.html" : {
@@ -732,6 +653,14 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
+    "\/ingresa-codigo.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/ingresa-codigo.html",
+      "oF" : 0
+    },
     "\/js\/script-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -760,6 +689,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/Mis_votos.html",
+      "oF" : 0
+    },
+    "\/Obras.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Obras.html",
       "oF" : 0
     },
     "\/PODIUMLILI.html" : {
