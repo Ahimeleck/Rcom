@@ -41,6 +41,15 @@ header a{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+.boton{
+    color: #2A2A2A;
+    background-color: #D9D9D9;
+}
+.navito{
+    display:flex;
+    flex-direction:row;
+    align-items:row
+}
 }
 
 #retiFichas{
