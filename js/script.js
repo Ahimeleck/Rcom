@@ -1,100 +1,185 @@
-document.addEventListener("DOMContentLoaded", function menuRetractil() {
+document.addEventListener("DOMContentLoaded", function() {
+    // Manejar el menú retráctil
     const cerrarMenuBtn = document.getElementById("cerrarMenu");
     const menu = document.getElementById("cuerpo");
 
-    cerrarMenuBtn.addEventListener("click", function colapsarExpandir() {
-        // Alternar entre las clases expandido y colapsado
-        menu.classList.toggle("expandido");
-        menu.classList.toggle("colapsado");
-    });
-});
+    if (cerrarMenuBtn && menu) {
+        cerrarMenuBtn.addEventListener("click", function() {
+            menu.classList.toggle("expandido");
+        });
+    }
 
-document.addEventListener("DOMContentLoaded", function inicializarBarraDeProgreso() {
-    const btnSincronizar = document.getElementById("btnSincronizar");
-    const barraProgreso = document.getElementById("barraProgreso");
-    const mensaje = document.getElementById("completado");
-    const ultimaSincronizacion = document.getElementById("ultimaSincronizacion");
-  
-    btnSincronizar.addEventListener("click", function iniciarAnimacionDeBarra() {
-        // Restablecer la barra de progreso a 0%
-        barraProgreso.style.width = "0%";
-        barraProgreso.style.padding = "10px";
-        barraProgreso.textContent = "0%";
-        mensaje.textContent = ""; // Limpiar el mensaje de sincronización completada
-  
-        // Iniciar la animación de la barra de progreso
-        let porcentaje = 0;
-        const intervalo = setInterval(function actualizarProgresoDeLaBarra() {
-            porcentaje += 10; // Aumentar el porcentaje en cada iteración
-            if (porcentaje > 100) {
-                clearInterval(intervalo); // Detener la animación cuando se alcanza el 100%
-                mensaje.textContent = "Sincronización completada"; // Mostrar el mensaje de sincronización completada
-                actualizarUltimaSincronizacion(); // Actualizar la fecha de última sincronización
+    // Cargar usuarios al cargar la página
+    cargarUsuarios();
+
+    // Manejar la búsqueda de usuarios
+    const inputBuscar = document.getElementById("buscarUsuario");
+    inputBuscar.addEventListener("input", function() {
+        buscarUsuarios(inputBuscar.value);
+    });
+
+    // Función para cargar usuarios de la base de datos
+    async function cargarUsuarios() {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            alert('No estás autenticado. Por favor, inicia sesión.');
+            return;
+        }
+
+        try {
+            const response = await fetch('http://localhost:5000/api/usuarios', {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+            const usuarios = await response.json();
+
+            if (response.ok) {
+                mostrarUsuarios(usuarios);
             } else {
-                barraProgreso.style.width = porcentaje + "%"; // Actualizar el ancho de la barra de progreso
-                barraProgreso.textContent = porcentaje + "%"; // Actualizar el texto de la barra de progreso
+                console.error('Error al cargar los usuarios:', usuarios.mensaje);
             }
-        }, 500); // Intervalo de tiempo para cada iteración (en milisegundos)
-    });
-
-    function actualizarUltimaSincronizacion() {
-        // Obtener la fecha y hora actual
-        const fechaHoraActual = new Date();
-        // Formatear la fecha y hora actual como dd/mm/aaaa - hh:mm:ss
-        const fechaFormateada = `${fechaHoraActual.getDate()}/${fechaHoraActual.getMonth() + 1}/${fechaHoraActual.getFullYear()} - ${fechaHoraActual.getHours()}:${fechaHoraActual.getMinutes()}:${fechaHoraActual.getSeconds()}`;
-        // Actualizar el contenido del elemento "ultimaSincronizacion" con la fecha y hora actual
-        ultimaSincronizacion.textContent = fechaFormateada;
+        } catch (error) {
+            console.error('Error del servidor:', error);
+        }
     }
-});
 
-function abrirModal(idModal) {
-    document.getElementById(idModal).style.display = "block";
-}
+    // Función para buscar usuarios
+    async function buscarUsuarios(query) {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            alert('No estás autenticado. Por favor, inicia sesión.');
+            return;
+        }
 
-function cerrarModal(idModal) {
-    document.getElementById(idModal).style.display = "none";
-}
+        try {
+            const response = await fetch(`http://localhost:5000/api/usuarios/buscar?q=${query}`, {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+            const usuarios = await response.json();
 
-function guardarUsuario() {
-    // Aquí puedes agregar la lógica para guardar el usuario
-    cerrarModal('modalCrearUsuario');
-}
-
-function confirmarBorrado() {
-    // Aquí puedes agregar la lógica para borrar el usuario
-    cerrarModal('modalConfirmarBorrado');
-    // Ocultar el usuario correspondiente
-    let usuarioAEliminar = document.querySelector('.usuario.visible');
-    if (usuarioAEliminar) {
-        usuarioAEliminar.style.display = 'none';
+            if (response.ok) {
+                mostrarUsuarios(usuarios);
+            } else {
+                console.error('Error al buscar usuarios:', usuarios.mensaje);
+            }
+        } catch (error) {
+            console.error('Error del servidor:', error);
+        }
     }
-}
 
-function cancelarBorrado() {
-    cerrarModal('modalConfirmarBorrado');
-}
+    // Función para mostrar la lista de usuarios
+    function mostrarUsuarios(usuarios) {
+        const listaUsuarios = document.getElementById("listaUsuarios");
+        listaUsuarios.innerHTML = ''; // Limpiar la lista antes de agregar nuevos elementos
 
-// Función para manejar el click en la opción predeterminada
-function toggleActive() {
-    var parent = this.parentNode;
-    parent.classList.toggle("active");
-}
+        usuarios.forEach(usuario => {
+            const divUsuario = document.createElement('div');
+            divUsuario.classList.add('usuario');
 
-// Función para manejar el click en las opciones de la lista
-function selectOption() {
-    var currentEle = this.innerHTML;
-    var defaultOption = document.querySelector(".default_option");
-    defaultOption.innerHTML = currentEle;
-    var selectWrap = this.closest(".select_wrap");
-    selectWrap.classList.remove("active");
-}
+            const avatar = document.createElement('img');
+            avatar.src = usuario.avatar || 'images/Avatar.svg'; // Si no hay imagen, usar un avatar predeterminado
+            avatar.alt = 'Usuario';
 
-// Seleccionar elementos con la clase "default_option" y agregar evento click
-var defaultOption = document.querySelector(".default_option");
-defaultOption.addEventListener("click", toggleActive);
+            const nombreCorreoDiv = document.createElement('div');
+            nombreCorreoDiv.classList.add('nombreCorreo');
 
-// Seleccionar elementos con la clase "select_ul li" y agregar evento click
-var selectListItems = document.querySelectorAll(".select_ul li");
-selectListItems.forEach(function(item) {
-    item.addEventListener("click", selectOption);
+            const nombreUsuario = document.createElement('strong');
+            nombreUsuario.classList.add('nombreUsuario');
+            nombreUsuario.textContent = usuario.nombre;
+
+            const correoUsuario = document.createElement('span');
+            correoUsuario.textContent = usuario.email;
+
+            const rolDiv = document.createElement('div');
+            rolDiv.classList.add('rol');
+            rolDiv.textContent = usuario.role === 'administrador' ? 'Administrador' : 'Usuario';
+
+            const editarBtn = document.createElement('a');
+            editarBtn.href = '#';
+            editarBtn.classList.add('editar');
+            editarBtn.innerHTML = '<span class="material-symbols-outlined">edit</span>';
+            editarBtn.addEventListener('click', () => editarUsuario(usuario));
+
+            const borrarBtn = document.createElement('a');
+            borrarBtn.href = '#';
+            borrarBtn.classList.add('borrar');
+            borrarBtn.innerHTML = '<span class="material-symbols-outlined">delete</span>';
+            borrarBtn.addEventListener('click', () => abrirModalConfirmarBorrado(usuario.id));
+
+            nombreCorreoDiv.appendChild(nombreUsuario);
+            nombreCorreoDiv.appendChild(correoUsuario);
+
+            divUsuario.appendChild(avatar);
+            divUsuario.appendChild(nombreCorreoDiv);
+            divUsuario.appendChild(rolDiv);
+            divUsuario.appendChild(editarBtn);
+            divUsuario.appendChild(borrarBtn);
+
+            listaUsuarios.appendChild(divUsuario);
+        });
+    }
+
+    // Función para manejar la edición de un usuario (solo para superadministrador)
+    async function editarUsuario(usuario) {
+        abrirModal('modalCrearUsuario');
+        document.getElementById('nombre').value = usuario.nombre;
+        document.getElementById('email').value = usuario.email;
+        document.getElementById('esAdmin').checked = usuario.role === 'administrador';
+
+        // Si necesitas hacer alguna acción específica para actualizar el usuario, puedes hacerla aquí.
+    }
+
+    // Función para confirmar el borrado de un usuario
+    async function abrirModalConfirmarBorrado(idUsuario) {
+        abrirModal('modalConfirmarBorrado');
+        document.getElementById('confirmarBorrado').onclick = async function() {
+            await borrarUsuario(idUsuario);
+        };
+    }
+
+    // Función para borrar un usuario
+    async function borrarUsuario(idUsuario) {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            alert('No estás autenticado. Por favor, inicia sesión.');
+            return;
+        }
+
+        try {
+            const response = await fetch(`http://localhost:5000/api/usuarios/${idUsuario}`, {
+                method: 'DELETE',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+
+            if (response.ok) {
+                cerrarModal('modalConfirmarBorrado');
+                cargarUsuarios(); // Volver a cargar la lista de usuarios después de la eliminación
+            } else {
+                console.error('Error al eliminar el usuario:', await response.json());
+            }
+        } catch (error) {
+            console.error('Error del servidor:', error);
+        }
+    }
+
+    // Función para abrir el modal
+    function abrirModal(idModal) {
+        const modal = document.getElementById(idModal);
+        if (modal) {
+            modal.style.display = "block"; // Muestra el modal
+        }
+    }
+
+    // Función para cerrar el modal
+    function cerrarModal(idModal) {
+        const modal = document.getElementById(idModal);
+        if (modal) {
+            modal.style.display = "none"; // Oculta el modal
+        }
+    }
 });

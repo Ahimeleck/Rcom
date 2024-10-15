@@ -16,30 +16,48 @@
 <body id="Inicio">
     <main>
         <img src="images/marcaExpoArtcom-black.svg">
-        <form id="loginForm" method="post">
-          <label for="username">Usuario</label><br>
-          <input type="text" id="username" name="username"><br>
+        <form id="loginForm">
+          <label for="email">Correo electrónico</label><br>
+          <input type="email" id="email" name="email" required><br>
           <label for="password">Contraseña</label><br>
-          <input type="password" id="password" name="password"><br>
+          <input type="password" id="password" name="password" required><br>
           <input type="submit" value="Iniciar Sesión">
         </form>   
-        <p id="Error">
+        <p id="Error" style="display:none; color:red;">
             <strong>Error:</strong> Por favor ingrese el usuario y contraseña correcta.
         </p>     
     </main>
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        document.getElementById('loginForm').addEventListener('submit', async function(event) {
           event.preventDefault(); // Prevent the form from submitting
     
-          var username = document.getElementById('username').value;
-          var password = document.getElementById('password').value;
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
     
-          // Check if username and password are correct
-          if (username === 'visitante' && password === 'vertice') {
-            // Redirect to dashboard.html
-            window.location.href = 'dashboard.html';
-          } else {
-            // Display error message
+          try {
+            const response = await fetch('http://localhost:5000/api/auth/login', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ email, password })
+            });
+    
+            const data = await response.json();
+    
+            if (response.ok) {
+              // Store JWT token in localStorage
+              localStorage.setItem('token', data.token);
+    
+              // Redirect to the dashboard
+              window.location.href = 'usuarios.html'; // Change to the page you want to redirect after login
+            } else {
+              // Show error message if login failed
+              document.getElementById('Error').style.display = 'block';
+            }
+          } catch (error) {
+            console.error('Error:', error);
+            document.getElementById('Error').textContent = 'Error en el servidor';
             document.getElementById('Error').style.display = 'block';
           }
         });
